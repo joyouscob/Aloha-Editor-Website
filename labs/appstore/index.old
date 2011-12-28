@@ -1,0 +1,140 @@
+﻿<?
+
+ini_set( 'display_errors', true);
+
+//error handler function
+function customError($errno, $errstr)
+  {
+  echo "<b>Error:</b> [$errno] $errstr";
+  }
+
+//set error handler
+set_error_handler("customError");
+
+header("content-type: application/javascript");
+require_once 'facebook-php-sdk/src/facebook.php';
+
+// Create Application instance.
+$facebook = new Facebook(array(
+  'appId'  => '147787611913077',
+  'secret' => 'e7294b14e0c2442e457f370c663427d4',
+  'cookie' => true,
+));
+
+// We may or may not have this data based on a $_GET or $_COOKIE based session.
+//
+// If we get a session here, it means we found a correctly signed session using
+// the Application Secret only Facebook and the Application know. We dont know
+// if it is still valid until we make an API call using the session. A session
+// can become invalid if it has already expired (should not be getting the
+// session back in this case) or if the user logged out of Facebook.
+$session = $facebook->getSession();
+
+$me = null;
+// Session based API call.
+if ($session) {
+  try {
+    $uid = $facebook->getUser();
+    $me = $facebook->api('/me');
+  } catch (FacebookApiException $e) {
+    error_log($e);
+  }
+}
+
+// login or logout url will be needed depending on current user state.
+if ($me) {
+  $logoutUrl = $facebook->getLogoutUrl();
+} else {
+  $loginUrl = $facebook->getLoginUrl();
+}
+if (array_key_exists('plugins', $_REQUEST)) {
+
+	$fb = Array(
+		"appId" => $facebook->getAppId(),
+		"session" => json_encode($session),
+		"status" => true
+	);
+	if ( $me ) {
+		$fb['logoutUrl'] = $facebook->getLogoutUrl();
+	} else {
+		$fb['loginUrl'] = $facebook->getLoginUrl();
+	}
+
+	$plugins = Array();
+	$p_root = "http://aloha-editor.org/labs/appstore/aloha-0.9.3/plugins";
+	if ( $me ) {
+		$plugins["com.gentics.aloha.plugins.Format"] = Array (
+			"url" => $p_root."/com.gentics.aloha.plugins.Format/plugin.js",
+			"version" => "0.9.3"
+		);
+		$plugins["com.gentics.aloha.plugins.Table"] = Array (
+			"url" => $p_root."/com.gentics.aloha.plugins.Table/plugin.js",
+			"version" => "0.9.3"
+		);
+		$plugins["com.gentics.aloha.plugins.Link"] = Array (
+			"url" => $p_root."/com.gentics.aloha.plugins.Link/plugin.js",
+			"version" => "0.9.3"
+		);
+	}
+
+	$res = Array(
+		"fb" => $fb,
+		"plugins" => $plugins
+	);
+	echo 'GENTICS.Aloha.apps.config = jQuery.parseJSON('.json_encode($res).');GENTICS.Aloha.apps.asyncInit();';
+	die;
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<title>Aloha Editor - Appstore</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+  <!--
+      We use the JS SDK to provide a richer user experience. For more info,
+      look here: http://github.com/facebook/connect-js
+    -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId   : '<?php echo $facebook->getAppId(); ?>',
+          session : <?php echo json_encode($session); ?>, // don't refetch the session when PHP already has it
+          status  : true, // check login status
+          cookie  : true, // enable cookies to allow the server to access the session
+          xfbml   : true // parse XFBML
+        });
+
+        // whenever the user logs in, we refresh the page
+        FB.Event.subscribe('auth.login', function() {
+          window.location.reload();
+        });
+      };
+
+      (function() {
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
+
+<?php if ($me): ?>	
+<span style="float:right; font-size: 75%; color:#666;">Hello <?=$me['first_name']?>, you are logged in via facebook. If you <a href="<?=$logoutUrl?>">logout</a> you are logged out on facebook too.</span>
+<?php endif; ?>
+<?php if ($me): ?>	
+				<p>Hi <?=$me['first_name']?> choose you plugins!</p>
+<?php else: ?>
+				<p>Howdy, configure your Editor!</p>
+				<p>Just <a href="<?=$loginUrl?>">login</a> via facebook and select your plugins. &nbsp;<a href="<?php echo $loginUrl; ?>" style="border: none;"><img src="fb_login.png"></a></p>
+<?php endif ?>             
+<? 
+print_r($_SERVER);
+print_r($facebook);
+?>
+</body>
+</html>

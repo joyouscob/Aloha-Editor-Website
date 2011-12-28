@@ -1,0 +1,64 @@
+10
+
+dir
+6
+file:///Users/scherrer/aloha-editor/aloha-editor.web/trunk/aloha/plugins
+file:///Users/scherrer/aloha-editor
+
+
+
+2011-02-25T17:50:54.917851Z
+6
+scherrer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5d75f627-c36f-4786-b527-3a3f99b4a588
+
+com.gentics.aloha.plugins.HighlightEditables
+dir
+
+com.gentics.aloha.plugins.Table
+dir
+
+com.gentics.aloha.plugins.Format
+dir
+
+com.gentics.aloha.plugins.DragAndDropFiles
+dir
+
+com.gentics.aloha.plugins.List
+dir
+
+com.gentics.aloha.plugins.Paste
+dir
+
+com.gentics.aloha.plugins.Link
+dir
+
+com.gentics.aloha.plugins.Media
+dir
+
+com.gentics.aloha.plugins.LinkChecker
+dir
+
+com.gentics.aloha.plugins.Image
+dir
+
+com.gentics.aloha.plugins.CropNResize
+dir
+
+com.gentics.aloha.plugins.VIE
+dir
+

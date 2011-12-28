@@ -1,0 +1,13 @@
+body {
+	background-image: url(../img/bg.jpg);
+}
+
+.container_12 {
+	background: none;
+}
+
+h1#branding {
+	background: none;
+	margin: 30px;
+	font-weight: bold;
+}

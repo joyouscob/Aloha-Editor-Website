@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Aloha powered by Fluid 960 Grid System | 12-column Grid</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/example.css" media="screen" />
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<script>GENTICS_Aloha_base="../../aloha/aloha/";</script>
+<script type="text/javascript" src="../../aloha/aloha/aloha.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Format/plugin.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Table/plugin.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.List/plugin.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Link/plugin.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.HighlightEditables/plugin.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.TOC/plugin.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Link/delicious.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Link/LinkList.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Paste/plugin.js"></script>
+<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Paste/wordpastehandler.js"></script>
+
+<!-- turn an element into editable Aloha continuous text -->
+<script type="text/javascript">
+GENTICS.Aloha.settings = {
+	logLevels: {'error': true, 'warn': true, 'info': true, 'debug': false},
+	errorhandling : false,
+	ribbon: false,	
+	"i18n": {
+		// you can either let the system detect the users language (set acceptLanguage on server)
+		// In PHP this would would be '<?=$_SERVER['HTTP_ACCEPT_LANGUAGE']?>' resulting in 
+		// "acceptLanguage": 'de-de,de;q=0.8,it;q=0.6,en-us;q=0.7,en;q=0.2'
+		// or set current on server side to be in sync with your backend system 
+		"current": "en" 
+	},
+	"repositories": {
+	 	"com.gentics.aloha.repositories.LinkList": {
+	 		data: [
+ 		        { name: 'Aloha Developers Wiki', url:'http://www.aloha-editor.com/wiki', type:'website', weight: 0.50 },
+ 		        { name: 'Aloha Editor - The HTML5 Editor', url:'http://aloha-editor.com', type:'website', weight: 0.90  },
+ 		        { name: 'Aloha Demo', url:'http://www.aloha-editor.com/demos.html', type:'website', weight: 0.75  },
+ 		        { name: 'Aloha Wordpress Demo', url:'http://www.aloha-editor.com/demos/wordpress-demo/index.html', type:'website', weight: 0.75  },
+ 		        { name: 'Aloha Logo', url:'http://www.aloha-editor.com/images/aloha-editor-logo.png', type:'image', weight: 0.10  }
+	 		]
+		}
+	},
+	"plugins": {
+	 	"com.gentics.aloha.plugins.Format": {
+		 	// all elements with no specific configuration get this configuration
+			config : [ 'b', 'i','sub','sup', 'p', 'title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'removeFormat'],
+		  	editables : {
+				// no formatting allowed for title
+				'#title'	: [ ], 
+		  	}
+		},
+	 	"com.gentics.aloha.plugins.List": { 
+		 	// all elements with no specific configuration get an UL, just for fun :)
+			config : [ 'ul' , 'ol'],
+		  	editables : {
+				// Even if this is configured it is not set because OL and UL are not allowed in H1.
+				'#title'	: [  ], 
+		  	}
+		},
+	 	"com.gentics.aloha.plugins.Link": {
+		 	// all elements with no specific configuration may insert links
+			config : [ 'a' ],
+		  	editables : {
+				// No links in the title.
+				'#title'	: [  ]
+		  	},
+		  	// all links that match the targetregex will get set the target
+ 			// e.g. ^(?!.*aloha-editor.com).* matches all href except aloha-editor.com
+		  	targetregex : '^(?!.*aloha-editor.com).*',
+		  	// this target is set when either targetregex matches or not set
+		    // e.g. _blank opens all links in new window
+		  	target : '_blank',
+		  	// the same for css class as for target
+		  	cssclassregex : '^(?!.*aloha-editor.com).*',
+		  	cssclass : 'aloha',
+		  	// use all resources of type website for autosuggest
+		  	objectTypeFilter: ['website'],
+		  	// handle change of href
+		  	onHrefChange: function( obj, href, item ) {
+			  	if ( item ) {
+					jQuery(obj).attr('data-name', item.name);
+			  	} else {
+					jQuery(obj).removeAttr('data-name');
+			  	}
+		  	}
+		},
+	 	"com.gentics.aloha.plugins.Table": { 
+		 	// all elements with no specific configuration are not allowed to insert tables
+			config : [ 'table' ]
+		}
+  	}
+};
+
+$(document).ready(function() {
+	$('.editable').aloha();
+});
+</script>
+	</head>
+	<body>
+		<div class="container_12">
+			<div class="grid_12">
+				<h1 id="branding">
+					Aloha powered by Fluid 960 Grid System
+				</h1>
+			</div>
+			<div class="clear" style="height: 20px"></div>
+			<div class="grid_3">
+				<div class="box editable">
+					<h2>Aloha Editor. The HTML5 Editor.</h2>
+					<div class="block">
+						<p>World’s most advanced Editor is designed to give the user a complete new experience when editing a website, wiki, blog or any other content. I can be 3x faster than existing technologies and offers offers unprecedented opportunities.</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid_3">
+				<div class="box editable">
+					<h2>Many tried WYSIWYG and did not achieve. We succeeded.</h2>
+					<div class="block">
+						<p>You can edit the website content as you see it. You do not need to save or preview to see how your text will look like on the final website. You can see the real changes the right moment you type. You do not need to log into a backend to edit any text. You edit on the actual frontend website. You neither do have to load a rich text editor. Just edit right ahead. You still do have all capabilities advanced rich text editors offers.</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid_3">
+				<div class="box editable">
+					<h2>The floating menu. A clean lightweight context menu.</h2>
+					<div class="block">
+						<p>The worlds first floating menu gives you the right options for the right context. The menu floats to the paragraph, table or content element you are editing. So you have alway a short way to the menu. Aloha Editor is designed to show not more than 15 icons at the same time. This offers you a clear overview about the possible options. You see only those icons which are useful to you because of your selection or position with the cursor. Still you may have other available options 1 mouse click away.</p>
+					</div>
+				</div>
+			</div>
+			<div class="grid_3">
+				<div class="box editable">
+					<h2>Editing and formatting text without Markup</h2>
+					<div class="block">
+						<p>Editing any content Aloha Editor gives you the same experience modern office suites offer you. No need to learn any HTML, Wiki or other markup. The option dialogs have been designed for users not for techies. Writing content has never been that easy. You can see the formatting result in the buttons of the floating menu so you know in advance what will happen if you use a formatting. It has never been easier to edit tables. You can jump through the cells with the tab button. Hit tab in the last cell adds another row.</p>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_3">
+				<div class="box editable">
+<h2>HTML5 available - now.</h2>
+<p>Aloha Editor makes HTML5 possible - now. All major browsers support contenteditable. This is the heart of Aloha Editor and makes it to worlds most advanced Editor. With Aloha Editor you are one step closer to the exiting new world that comes with HTML5.
+</p>
+</div>
+<div class="box editable">
+<h2>Faster.
+No reload. No popup. No need to preview.</h2>
+<p>Aloha Editor is loaded when you load your website. If you want to start editing you do not need to reload the website with an old style rich text editor. Loading common rich text editors need to reload the website or come with a popup. Both actions are boring and take some time to process. Time you better invest in editing. When you finished editing you want to see the result and need to preview. This needs more time. More boring. With Aloha Editor you work in the final result so you do not need to load any thing or preview anything. You see what you get doing it.</p>
+				</div>
+			</div>
+			<div class="grid_5">
+				<div class="box">
+					<h2>
+						<a href="#" id="toggle-accordion">Accordion</a>
+					</h2>
+					<div class="block editable" id="accordion">
+						<div id="accordion">
+							<h3 class="toggler atStart">Design Process</h3>
+							<div class="element atStart">
+								<h4>The Value of Design</h4>
+								<p>Design is based on the inspiration of past accomplishments. On that foundation, we can build upon those achievements to shape the future. Design is about life — past, present and future — and the learning process that happens between birth and death. It is about community and shared knowledge and experience. It is the passion to build on what we've learned to create something better.</p>
+							</div>
+							<h3 class="toggler atStart">Design Influences</h3>
+							<div class="element atStart">
+								<h4>About this Site</h4>
+								<p>The words "design influences" can be understood as both a plural noun and as subject and verb. The plural noun speaks of those who have come before us and paved the way. The verb speaks of the responsibility of design to lead the way. By understanding where we have come from, we have a better idea of where we are going and, perhaps, where we should be heading.</p>
+							</div>
+							<h3 class="toggler atStart">Inspiration</h3>
+							<div class="element atStart">
+								<h4>Inspired by the Past</h4>
+								<p>I have been inspired by the work of many who have pioneered advances in Web Standards, including 
+						<a href="http://www.31three.com/" title="www.31three.com">Jesse Bennett-Chamberlain</a>, 
+						<a href="http://www.stopdesign.com/" title="www.stopdesign.com">Douglas Bowman</a>, 
+						<a href="http://www.chaoticpattern.com/" title="www.chaoticpattern.com">Allen Chang</a>, 
+						<a href="http://www.stuffandnonsense.co.uk/" title="www.stuffandnonsense.co.uk">Andy Clarke</a>, 
+						<a href="http://www.hicksdesign.co.uk/" title="www.hicksdesign.co.uk">Jon Hicks</a>, 
+						<a href="http://www.shauninman.com/" title="www.shauninman.com">Shaun Inman</a>, 
+						<a href="http://www.cameronmoll.com/" title="www.cameronmoll.com">Cameron Moll</a>, 
+						<a href="http://veerle.duoh.com/" title="veerle.duoh.com">Veerle Pieters</a>, 
+						<a href="http://www.jasonsantamaria.com/" title="www.jasonsantamaria.com">Jason Santa Maria</a>, 
+						<a href="http://www.mezzoblue.com/" title="www.mezzoblue.com">Dave Shea</a>, 
+						<a href="http://www.thebignoob.com/" title="www.thebignoob.com">Ryan Sims</a>, 
+						<a href="http://www.sonspring.com/" title="www.sonspring.com">Nathan Smith</a>, and 
+						<a href="http://www.zeldman.com/" title="www.zeldman.com">Jeffrey Zeldman</a>, 
+						to name a few. Thank you for inspiring <a href="http://www.domain7.com/WhoWeAre/StephenBau.html" title="Stephen Bau, Designer, Domain7">me</a> to give something back.</p>
+							</div>
+							<h3 class="toggler atStart">Contribution</h3>
+							<div class="element atStart">
+								<h4>Shaping the Future</h4>
+								<p>The <a href="/fluid960gs/">Fluid 960 Grid System</a> templates have been built upon the work of Nathan Smith and his <a href="http://960.gs/">960 Grid System</a> using effects from the <a href="http://www.mootools.net/">Mootools</a> JavaScript library. The idea for building these templates was inspired by Andy Clarke, author of <a href="http://www.transcendingcss.com/">Transcending CSS</a>, who advocates a content-out approach to rapid interactive prototyping, crediting Jason Santa Maria with the <a href="http://www.jasonsantamaria.com/archive/2004/05/24/grey_box_method.php">grey box method</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<h2>
+						<a href="#" id="toggle-tables">Tables</a>
+					</h2>
+					<div class="block editable" id="tables">
+						<p>You might want to try to edit the table:</p>
+						<table>
+							<tr>
+								<td>Lorem ipsum</td>
+								<td>Dolor sit</td>
+								<td class="currency">$125.00</td>
+							</tr>
+							<tr>
+								<td>Dolor sit</td>
+								<td>Nostrud exerci</td>
+								<td class="currency">$75.00</td>
+							</tr>
+							<tr>
+								<td>Nostrud exerci</td>
+								<td>Lorem ipsum</td>
+								<td class="currency">$200.00</td>
+							</tr>
+							<tr>
+								<td>Lorem ipsum</td>
+								<td>Dolor sit</td>
+								<td class="currency">$64.00</td>
+							</tr>
+							<tr>
+								<td>Dolor sit</td>
+								<td>Nostrud exerci</td>
+								<td class="currency">$36.00</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="grid_4">
+				<div class="box articles">
+					<h2>
+						<a href="#" id="toggle-articles">Articles</a>
+					</h2>
+					<div class="block editable" id="articles">
+						<div class="article">
+							<h1>Heading 1</h1>
+							<h2>Heading 2</h2>
+							<h3>Heading 3</h3>
+							<h4>Heading 4</h4>
+							<p class="meta">Vancouver, BC — Wednesday, 23 April 2008</p>
+							<a href="#" class="image">
+								<img src="img/photo_60x60.jpg" width="60" height="60" alt="photo" />
+							</a>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <a href="#">Visit site.</a></p>
+							<h5>Heading 5</h5>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+							<h6>Heading 6</h6>
+							<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_12" id="site_info">
+				<div class="box">
+					<p>Fluid 960 Grid System, created by <a href="http://www.domain7.com/WhoWeAre/StephenBau.html">Stephen Bau</a>, based on the <a href="http://960.gs/">960 Grid System</a> by <a href="http://sonspring.com/journal/960-grid-system">Nathan Smith</a>. Released under the 
+		<a href="../../../licenses/GPL_license.txt">GPL</a> / <a href="../../../licenses/MIT_license.txt">MIT</a> <a href="../../../README.txt">Licenses</a>.</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery-fluid16.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17460389-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	</body>
+</html>

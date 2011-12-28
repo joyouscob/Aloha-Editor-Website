@@ -1,0 +1,58 @@
+
+.clear{
+	clear:both;
+}
+
+#form-container{
+	background-color:#f5f5f5;
+	padding:15px;
+	
+	-moz-border-radius:12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius:12px;
+}
+table {
+	border: none;
+}
+td{
+	white-space:nowrap;
+	border: none;
+}
+
+tr, tr:nth-child(2n) {
+	background: none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+
+textarea{
+	color:#404040;
+}
+
+td > button{
+	text-indent:8px;
+}
+
+.error{
+	background-color:#AB0000;
+	margin-top:10px;
+	padding:10px;
+	width:240px;
+}
+
+#loading{
+	position:relative;
+	bottom:9px;
+	visibility:hidden;
+}
+
+.tutorial-info{
+	color:white;
+	text-align:center;
+	padding:10px;
+	margin-top:10px;
+}

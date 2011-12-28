@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.aloha-editor.org/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/index.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/features.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/plugins.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/about.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/demos.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Main_Page</loc>
+  <lastmod>2011-03-21T09:39:28+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/api/</loc>
+  <lastmod>2010-11-29T15:28:32+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Aloha_Editor_Dev_Con_Vienna_11</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/analysis.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/demos/css3/</loc>
+  <lastmod>2010-11-26T17:57:37+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/logos.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/license.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/join_us.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/terms.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/privacy.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/demos/3col/</loc>
+  <lastmod>2010-11-26T18:10:59+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/demos/wordpress-demo/</loc>
+  <lastmod>2010-11-26T18:00:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/demos/960-fluid-demo/</loc>
+  <lastmod>2010-11-26T17:41:27+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/demos/aloha-world-example/</loc>
+  <lastmod>2010-11-26T17:56:21+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/How_to_install_Aloha_Editor</loc>
+  <lastmod>2011-03-03T22:41:40+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Coding_Guidelines</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Development_guide</loc>
+  <lastmod>2011-03-23T12:46:06+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Implementation_Guide</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/AlohaExamples</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Editor_Guide</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Roadmap</loc>
+  <lastmod>2011-03-19T09:13:25+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Plugins</loc>
+  <lastmod>2011-03-08T08:27:45+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Browser_Support</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Main_Page</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Main_Page&amp;oldid=3918</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Migration_to_jQuery_UI</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Gentics_runners_point</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Performances</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Drag%26DropFiles</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Aloha_Editor_Dev_Con_11_presentations</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Aloha_Editor_Dev_Con_Vienna_11</loc>
+  <lastmod>2011-03-01T11:29:41+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/aloha/aloha-test.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/tinymce/tinymce-test.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/another_editor/another_editor-test.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/aloha/aloha-performance.php?e=1</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/aloha/aloha-performance.php?e=5</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/aloha/aloha-performance.php?e=10</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/aloha/aloha-performance.php?e=20</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/aloha/aloha-performance.php?e=40</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/tinymce/tinymce-performance.php?e=1</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/tinymce/tinymce-performance.php?e=5</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/tinymce/tinymce-performance.php?e=10</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/tinymce/tinymce-performance.php?e=20</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/tinymce/tinymce-performance.php?e=40</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/another_editor/another_editor-performance.php?e=1</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/another_editor/another_editor-performance.php?e=5</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/another_editor/another_editor-performance.php?e=10</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/another_editor/another_editor-performance.php?e=20</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/benchmarks/another_editor/another_editor-performance.php?e=40</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/contact.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/licenses/GPL_license.txt</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/licenses/MIT_license.txt</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/README.txt</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:How_to_install_Aloha_Editor</loc>
+  <lastmod>2011-03-03T22:41:40+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=How_to_install_Aloha_Editor&amp;oldid=2718</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Coding_Guidelines</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Coding_Guidelines&amp;oldid=2224</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/DebuggerPlugin</loc>
+  <lastmod>2011-03-06T12:21:09+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Development_guide</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Development_guide&amp;oldid=4096</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Implementation_Guide</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Implementation_Guide&amp;oldid=2498</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Aloha_PHP_Example</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Aloha_ColdFusion_Example</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=AlohaExamples&amp;oldid=2185</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Editor_Guide&amp;oldid=1570</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Repository</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/ImagePlugin</loc>
+  <lastmod>2011-02-28T19:16:17+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Drag&amp;DropFiles</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Undo</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/MessageStack</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/User:Balupton</loc>
+  <lastmod>2011-03-05T21:38:32+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Roadmap&amp;oldid=3672</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Semantic_Annotation</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Plugins/Ribbon</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Plugins&amp;oldid=2770</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Aloha_mobile_ideas</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Browser_Support&amp;oldid=2449</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Main_Page&amp;oldid=2526</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Main_Page&amp;oldid=3918&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Migration_to_jQuery_UI&amp;oldid=2688</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Gentics_runners_point&amp;oldid=2500</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Performances&amp;oldid=2654</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Drag%26DropFiles</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Drag%26DropFiles&amp;oldid=2697</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Aloha_Editor_Dev_Con_11</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_Editor_Dev_Con_11_presentations&amp;oldid=2672</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Aloha_Editor_Dev_Con_Vienna_11&amp;oldid=2748</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:How_to_install_Aloha_Editor&amp;oldid=2759</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=How_to_install_Aloha_Editor&amp;oldid=2718&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Coding_Guidelines&amp;oldid=2321</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Coding_Guidelines&amp;oldid=2224&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=DebuggerPlugin&amp;oldid=2767</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Development_guide&amp;oldid=2327</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Development_guide&amp;oldid=4096&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Implementation_Guide&amp;oldid=2227</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Implementation_Guide&amp;oldid=2498&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_PHP_Example&amp;oldid=1715</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_ColdFusion_Example&amp;oldid=2184</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=AlohaExamples&amp;oldid=2185&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Editor_Guide&amp;oldid=1570&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Repository</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Repository&amp;oldid=2373</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=ImagePlugin&amp;oldid=2741</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Undo&amp;oldid=2737</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=MessageStack&amp;oldid=2426</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Balupton&amp;oldid=2766</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/User:Draftkraft</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Roadmap&amp;oldid=3672&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Semantic_Annotation_Implementation</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/RdfQuery</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Semantic_Annotation</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Semantic_Annotation&amp;oldid=2716</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Plugins/Ribbon&amp;oldid=2102</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/User:Nka11</loc>
+  <lastmod>2011-03-06T12:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Plugins&amp;oldid=2770&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_mobile_ideas&amp;oldid=2638</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Browser_Support&amp;oldid=2449&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Main_Page&amp;oldid=2526&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Migration_to_jQuery_UI&amp;oldid=2688&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Gentics_runners_point&amp;oldid=2500&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/User:Bistory</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Performances&amp;oldid=2654&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Drag%26DropFiles&amp;oldid=2091</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Drag%26DropFiles&amp;oldid=2697&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/Talk:Aloha_Editor_Dev_Con_11</loc>
+  <lastmod>2011-03-01T11:29:41+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_Editor_Dev_Con_11&amp;oldid=2729</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_Editor_Dev_Con_11_presentations&amp;oldid=2672&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Aloha_Editor_Dev_Con_Vienna_11&amp;oldid=2748&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:How_to_install_Aloha_Editor&amp;oldid=2759&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Coding_Guidelines&amp;oldid=2321&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=DebuggerPlugin&amp;oldid=2767&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Development_guide&amp;oldid=2327&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Implementation_Guide&amp;oldid=2227&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_PHP_Example&amp;oldid=1715&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_ColdFusion_Example&amp;oldid=2184&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Repository&amp;oldid=2371</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Repository&amp;oldid=2373&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=ImagePlugin&amp;oldid=2741&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Undo&amp;oldid=2737&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=MessageStack&amp;oldid=2426&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Balupton&amp;oldid=2766&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Draftkraft&amp;oldid=2281</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Semantic_Annotation_Implementation&amp;oldid=1863</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=RdfQuery&amp;oldid=2219</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Semantic_Annotation&amp;oldid=2324</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Semantic_Annotation&amp;oldid=2716&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Plugins/Ribbon&amp;oldid=2102&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Nka11&amp;oldid=2492</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_mobile_ideas&amp;oldid=2638&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Bistory&amp;oldid=2273</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Drag%26DropFiles&amp;oldid=2091&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Aloha_Editor_Dev_Con_11&amp;redirect=no</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Aloha_Editor_Dev_Con_11&amp;oldid=2729&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Repository&amp;oldid=2371&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Draftkraft&amp;oldid=2281&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Semantic_Annotation_Implementation&amp;oldid=1863&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/User:Rene.Kapusta</loc>
+  <lastmod>2011-02-28T18:52:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=RdfQuery&amp;oldid=2219&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=Talk:Semantic_Annotation&amp;oldid=2324&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Nka11&amp;oldid=2492&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Bistory&amp;oldid=2273&amp;printable=yes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.aloha-editor.org/wiki/index.php?title=User:Rene.Kapusta&amp;oldid=2473</loc>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>

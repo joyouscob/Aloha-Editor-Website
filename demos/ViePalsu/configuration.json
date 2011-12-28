@@ -1,0 +1,19 @@
+{
+    "twitter": 
+    {
+        "key": "",
+        "secret": ""
+    },
+    "linkedin":
+    {
+        "key": "",
+        "secret": ""
+    },
+    "facebook":
+    {
+        "key": "",
+        "secret": ""
+    },
+    "hostname": "localhost",
+    "port": 8002
+}
