@@ -16,14 +16,14 @@
 				<p>Aloha Editor is a semantic Rich Text Editor framework written in Javascript with best
 				support of xHTML5. You can integrate it in a CMS, blog, wiki software or any other project
 				where you need to edit content with a web based tool. Use it like a <b>supersonic textarea</b>. 
-				You can edit <a href="https://github.com/alohaeditor/Aloha-Editor/blob/master/WebContent/core/editable.js#L85">almost any DOM element</a> with this supersonic textarea, but you need to care about 
+				You can edit <a href="https://github.com/alohaeditor/Aloha-Editor/blob/dev/src/lib/aloha/editable.js#L310">almost any DOM element</a> with this supersonic textarea, but you need to care about 
 				configuration and storage.</p>
 				
 				<h2>What Aloha Editor is NOT!</h2>
 				<p>Aloha Editor is NOT a HTML Editor to install on a desktop nor it is a CMS.</p>
 				
 				<h2 id="html5">Why the HTML5 Editor?</h2>
-				<img alt="" src="logo/Aloha%20Editor%20HTML5%20contenteditable%20transparent%20256.png" style="float:left;padding:25px 25px 5px 0; "><p>Aloha Editor works perfectly in all current browsers and websites using HTML4! It is the HTML5 Editor because it <a href="https://github.com/alohaeditor/Aloha-Editor/blob/master/WebContent/utils/dom.js#L56">implements all functionality</a>
+				<img alt="" src="logo/Aloha%20Editor%20HTML5%20contenteditable%20transparent%20256.png" style="float:left;padding:25px 25px 5px 0; "><p>Aloha Editor works perfectly in all current browsers and websites using HTML4! It is the HTML5 Editor because it <a href="https://github.com/alohaeditor/Aloha-Editor/blob/dev/src/lib/util/dom.js#L98">implements all functionality</a>
 				respecting with no compromise the <a href="http://www.whatwg.org/specs/web-apps/current-work/">HTML5 specification</a>. It aims to generate <b>full compliant xHTML5 content</b>, but you don't need to use HTML5 specific methods, if you don't want to. The Aloha Editor uses and extends the attribute
 				<a href="http://blog.whatwg.org/the-road-to-html-5-contenteditable">contenteditable</a>, which was introduced in the HTML standard with version 5. Most current
 				browsers support that attribute, but their implementation is inconsitent due to erroneous 
