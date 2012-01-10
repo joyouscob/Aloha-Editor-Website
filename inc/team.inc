@@ -87,7 +87,7 @@
 				</p>
 				<p style="clear:both">
 				<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("romain@reaklab.com")));?>.jpg" style="float:left; padding:5px" />
-				<a href="http://http://www.wikeo.be">Romain Carliere</a><br />
+				<a href="http://www.wikeo.be">Romain Carliere</a><br />
 				Javascript Guru<br />
 				<img alt="" src="<?=$path?>flags/be.gif" style="padding-right:5px" />Belgium
 				</p>
@@ -117,13 +117,13 @@
 				</p>
 				<p style="clear:both">
 				<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("jensen@networkteam.com")));?>.jpg" style="float:left; padding:5px" />
-				<a href="http://http://twitter.com/berit_jensen">Berit Jensen</a><br />
+				<a href="http://twitter.com/berit_jensen">Berit Jensen</a><br />
 				Webdesigner<br />
 				<img alt="" src="<?=$path?>flags/de.gif" style="padding-right:5px" />Germany
 				</p>
 				<p style="clear:both">
 				<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("sebastian@typo3.org")));?>.jpg" style="float:left; padding:5px" />
-				<a href="http://http://sandstorm-media.de">Sebastian Kurf&uuml;rst</a><br />
+				<a href="http://sandstorm-media.de">Sebastian Kurf&uuml;rst</a><br />
 				Javascript Guru<br />
 				<img alt="" src="<?=$path?>flags/de.gif" style="padding-right:5px" />Germany
 				</p>
