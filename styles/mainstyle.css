@@ -365,3 +365,8 @@ td {
 	top:-8px;
 	left:-20px;
 }
+
+/* twitter widget link style fix */
+.twtr-ft a, .twtr-ft span a, .twtr-doc a {
+	border-bottom: 0;
+}
