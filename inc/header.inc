@@ -22,7 +22,6 @@ $path = '/';
 ?>
 
 <?php if ( $_SERVER['SCRIPT_NAME'] == '/index.php' || 
-			$_SERVER['SCRIPT_NAME'] == '/index.new.php' ||
 			$_SERVER['SCRIPT_NAME'] == '/features.php' ) { ?>
 	<link href="<?=$aloha_path?>css/aloha.css" type="text/css" rel="stylesheet" />
 	
