@@ -326,14 +326,14 @@ if ( $submitsuccess == true )
 
 Gentics & the Aloha Editor team thank you.
 <br /><br />
-<a href="<?php echo $_SERVER['PHP_SELF']; ?>">Again?</a>
+<a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>">Again?</a>
 <?php
 
 } else
 {
 
 ?>
-<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="xmassender">
+<form method="POST" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" id="xmassender">
 
 <?php if ( $_POST['submit'] && !$_POST['yourname'] ) echo '<font color="red"><b>Your name(!):</b></font>'; else echo 'Your name:'; ?> <input type="text" name="yourname" value="<?=$_POST['yourname']; ?>" /><br />
 <?php if ( $_POST['submit'] && !$_POST['friendsname'] ) echo '<font color="red"><b>Your friend\'s name(!):</b></font>'; else echo 'Your friend\'s name:'; ?> <input type="text" name="friendsname" value="<?=$_POST['friendsname']; ?>" /><br />

@@ -16,22 +16,49 @@
 	<link href="/styles/grid_960.css" type="text/css" rel="stylesheet" />
 	<link href="/styles/mainstyle.css" type="text/css" rel="stylesheet" />
 
-<? $aloha_path='/aloha-0.9.3/'; ?>
+<? 
+$aloha_path='/aloha-0.20/';
+$path = '/';
+?>
 
-<?php if ( $_SERVER[PHP_SELF] == '/index.php' || $_SERVER[PHP_SELF] == '/index.new.php' ) { ?>
+<?php if ( $_SERVER['SCRIPT_NAME'] == '/index.php' || 
+			$_SERVER['SCRIPT_NAME'] == '/index.new.php' ||
+			$_SERVER['SCRIPT_NAME'] == '/features.php' ) { ?>
+	<link href="<?=$aloha_path?>css/aloha.css" type="text/css" rel="stylesheet" />
+	
+	<script>
+		var Aloha = window.Aloha || ( window.Aloha = {} );
+		
+		Aloha.settings = {
+			locale: 'en',
+			plugins: {
+				format: {
+					config: [  'b', 'i', 'p', 'sub', 'sup', 'del', 'title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'removeFormat' ],
+				}
+			}
+		};
+	</script>
 
-	<script>GENTICS_Aloha_base="<?=$aloha_path?>aloha/";</script>
-	<script type="text/javascript" src="<?=$aloha_path?>debug/aloha.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.Format/plugin.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.Table/plugin.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.List/plugin.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.Link/plugin.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.HighlightEditables/plugin.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.Link/delicious.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.Link/LinkList.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.Paste/plugin.js"></script>
-	<script type="text/javascript" src="<?=$aloha_path?>aloha/plugins/com.gentics.aloha.plugins.Paste/wordpastehandler.js"></script>
+	<script type="text/javascript" src="<?=$aloha_path?>lib/aloha.js"
+				data-aloha-plugins="common/format,
+			                        common/table,
+			                        common/list,
+			                        common/link,
+			                        common/highlighteditables,
+			                        common/block,
+			                        common/undo,
+			                        common/contenthandler,
+			                        common/paste,
+			                        common/characterpicker,
+			                        common/commands,
+			                        extra/flag-icons,
+			                        common/abbr,
+			                        extra/browser,
+			                        extra/linkbrowser"></script>
 <?php } ?>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
 	<script>
 	$(document).ready(function() {
 		$('.new').append('<span class="newbadge"></span>');

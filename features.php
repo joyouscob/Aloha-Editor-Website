@@ -2,36 +2,11 @@
 
 	<!-- turn an element into editable Aloha continuous text -->
 	<script type="text/javascript">
-	GENTICS.Aloha.settings = {
-		"ribbon": false,
-		"i18n": {"current": "en"},
-		"repositories": {
-		 	"com.gentics.aloha.repositories.LinkList": {
-		 		data: [
-	 		        { name: 'Aloha Developers Wiki', url:'http://www.aloha-editor.com/wiki', type:'website', weight: 0.50 },
-	 		        { name: 'Aloha Editor - The HTML5 Editor', url:'http://aloha-editor.com', type:'website', weight: 0.90  },
-	 		        { name: 'Aloha Demo', url:'http://www.aloha-editor.com/demos.php', type:'website', weight: 0.75  },
-	 		        { name: 'Aloha Wordpress Demo', url:'http://www.aloha-editor.com/demos/wordpress-demo/index.html', type:'website', weight: 0.75  },
-	 		        { name: 'Aloha Logo', url:'http://www.aloha-editor.com/images/aloha-editor-logo.png', type:'image', weight: 0.10  }
-		 		]
-			}
-		},
-		"plugins": {
-	 	"com.gentics.aloha.plugins.Link": {
-			config : [ 'a' ],
-		  	targetregex : '^(?!.*aloha-editor.com).*',
-		  	target : '_blank',
-		  	cssclassregex : '^(?!.*aloha-editor.com).*',
-		  	cssclass : 'aloha',
-		  	objectTypeFilter: ['website'],
-		}
-		}
-
-	};
-
-	$(document).ready(function() {
-		$('#JustEdit').aloha();
-	});  
+	Aloha.ready(function() {
+		Aloha.require( ['aloha', 'aloha/jquery'], function( Aloha, $) {
+			$('#JustEdit').aloha();
+		});
+	});
 	</script>
 </head>
 

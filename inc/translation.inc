@@ -80,12 +80,19 @@ $user[] = Array('name'=>'mert','email'=>'mert@merttorun.com','langs'=>Array('tr'
 				</p>
 
 				<h3>Translation heros</h3>
-<? foreach ($user as $u) { ?>
+<? foreach ($user as $u) { 
+	if (empty($u['flags'])) $u['flags'] = array();
+	
+?>
 				<p style="float:left;width:325px; overflow:hidden">
                                 <img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim($u['email'])));?>.jpg" style="float:left; padding:5px" />
                                 <?=$u['name']?> <? if ($u['lname']) echo "($u[lname])"; ?><br />
-<? foreach ($u['langs'] as $k=>$l) { ?>
-                                <img title='<?=$lang[$l]?>' src="<?=$path?>flags/<?=($u['flags'])?$u['flags'][$k]:$l?>.gif" style="padding-right:5px" /> <?=($lang['l.'.$l])?"<span title='".$lang[$l]."'>".$lang['l.'.$l]."</span>":$lang[$l]?>
+<? foreach ($u['langs'] as $k=>$l) {
+	
+	if (empty($lang['l.'.$l])) $lang['l.'.$l] = $lang[$l];
+	?>
+	
+                                <img title='<?=$lang[$l]?>' src="<?=$path?>flags/<?=($u['flags'])?$u['flags'][$k]:$l?>.gif" style="padding-right:5px" /> <?=($lang['l.'.$l])?"<span title='".$lang[$l]."'>".$lang['l.'.$l]."</span>":$lang[$l]?><br />
 <? } ?> 
                                 <a href="<?=$u['link']?>"><?=substr($u['link'],7)?></a><br />
                                 </p>

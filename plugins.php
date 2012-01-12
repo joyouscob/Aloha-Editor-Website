@@ -1,21 +1,5 @@
 <? include('inc/header.inc'); ?>
 
-	<!-- turn an element into editable Aloha continuous text -->
-	<script type="text/javascript">
-	GENTICS.Aloha.settings = {
-		"ribbon": false,
-		"i18n": {"current": "en"},
-		"plugins": { 
-		 	"com.gentics.aloha.plugins.Format": { 
-				config : [ 'b', 'i','u','del','sub','sup']
-			} 
-	 	}
-	};
-
-	$(document).ready(function() {
-		$('#JustEdit').aloha();
-	});  
-	</script>
 </head>
 
 <body>

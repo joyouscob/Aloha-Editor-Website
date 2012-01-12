@@ -10,25 +10,7 @@ if ( $browser['browser'] == 'IE'  ) {
 }
 
 ?>
-	<!-- turn an element into editable Aloha continuous text -->
-	<script type="text/javascript">
-	GENTICS.Aloha.settings = {
-		"i18n": {"current": "en"},
-                "ribbon": false,
-		"plugins": { 
-			"com.gentics.aloha.plugins.GCN": { 
-				"enabled": false 
-			},
-		 	"com.gentics.aloha.plugins.Format": { 
-				config : [ 'b', 'i','u','del','sub','sup']
-			} 
-	 	}
-	};
 
-	$(document).ready(function() {
-		$('#YesYouCan').aloha();
-	});  
-	</script>
 </head>
 
 <body>
