@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule ^(.*)\.html$ $1.php [R=301,NC,L]
+RewriteRule ^[a-zA-Z0-9_-]\.html$ $1.php [R=301,NC,L]
 RewriteRule ^wiki([/]*)$ https://github.com/alohaeditor/Aloha-Editor/wiki [R=301,NC,L]
 #RewriteRule ^wiki(.*)$ https://github.com/alohaeditor/Aloha-Editor/wiki [R=301,NC,L]
