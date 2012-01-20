@@ -6,99 +6,78 @@ Author: Joshua Kelly (http://www.kmsm.ca/)
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Aloha, World!</title>
-<script>GENTICS_Aloha_base="../../aloha/aloha/";</script>
-<script type="text/javascript" src="../../aloha/aloha/aloha.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Format/plugin.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Table/plugin.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.List/plugin.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Link/plugin.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.HighlightEditables/plugin.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.TOC/plugin.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Link/delicious.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Link/LinkList.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Paste/plugin.js"></script>
-<script type="text/javascript" src="../../aloha/aloha/plugins/com.gentics.aloha.plugins.Paste/wordpastehandler.js"></script>
+
+<link href="/aloha-0.20/css/aloha.css" type="text/css" rel="stylesheet" />
+<script>
+	var Aloha = window.Aloha || ( window.Aloha = {} );
+	
+	Aloha.settings = {
+		locale: 'en',
+		plugins: {
+			format: {
+				config: [  'b', 'i', 'p', 'sub', 'sup', 'del', 'title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'removeFormat' ],
+			  	editables : {
+					// no formatting allowed for title
+					'#title'	: [ ]
+			  	}
+			},
+			link: {
+				editables : {
+					// No links in the title.
+					'#title'	: [  ]
+			  	}
+			},
+			list: {
+				editables : {
+					// No lists in the title.
+					'#title'	: [  ]
+			  	}
+			},
+			image: {
+				'fixedAspectRatio': true,
+				'maxWidth': 1024,
+				'minWidth': 10,
+				'maxHeight': 786,
+				'minHeight': 10,
+				'globalselector': '.global',
+				'ui': {
+					'oneTab': false
+				},
+				editables : {
+					// No images in the title.
+					'#title'	: [  ]
+			  	}
+			}
+		},
+		sidebar: {
+			disabled: true
+		}
+	};
+</script>
+
+<script type="text/javascript" src="/aloha-0.20/lib/aloha.js"
+			data-aloha-plugins="common/format,
+		                        common/table,
+		                        common/list,
+		                        common/link,
+		                        common/highlighteditables,
+		                        common/block,
+		                        common/undo,
+		                        common/contenthandler,
+		                        common/paste,
+		                        common/commands,
+		                        common/abbr,
+		                        extra/browser,
+		                        extra/linkbrowser"></script>
 
 <!-- turn an element into editable Aloha continuous text -->
 <script type="text/javascript">
-GENTICS.Aloha.settings = {
-	logLevels: {'error': true, 'warn': true, 'info': true, 'debug': false},
-	errorhandling : false,
-	ribbon: false,	
-	"i18n": {
-		// you can either let the system detect the users language (set acceptLanguage on server)
-		// In PHP this would would be '<?=$_SERVER['HTTP_ACCEPT_LANGUAGE']?>' resulting in 
-		// "acceptLanguage": 'de-de,de;q=0.8,it;q=0.6,en-us;q=0.7,en;q=0.2'
-		// or set current on server side to be in sync with your backend system 
-		"current": "en" 
-	},
-	"repositories": {
-	 	"com.gentics.aloha.repositories.LinkList": {
-	 		data: [
- 		        { name: 'Aloha Developers Wiki', url:'http://www.aloha-editor.com/wiki', type:'website', weight: 0.50 },
- 		        { name: 'Aloha Editor - The HTML5 Editor', url:'http://aloha-editor.com', type:'website', weight: 0.90  },
- 		        { name: 'Aloha Demo', url:'http://www.aloha-editor.com/demos.html', type:'website', weight: 0.75  },
- 		        { name: 'Aloha Wordpress Demo', url:'http://www.aloha-editor.com/demos/wordpress-demo/index.html', type:'website', weight: 0.75  },
- 		        { name: 'Aloha Logo', url:'http://www.aloha-editor.com/images/aloha-editor-logo.png', type:'image', weight: 0.10  }
-	 		]
-		}
-	},
-	"plugins": {
-	 	"com.gentics.aloha.plugins.Format": {
-		 	// all elements with no specific configuration get this configuration
-			config : [ 'b', 'i','sub','sup', 'p', 'title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'removeFormat'],
-		  	editables : {
-				// no formatting allowed for title
-				'#title'	: [ ], 
-		  	}
-		},
-	 	"com.gentics.aloha.plugins.List": { 
-		 	// all elements with no specific configuration get an UL, just for fun :)
-			config : [ 'ul' , 'ol'],
-		  	editables : {
-				// Even if this is configured it is not set because OL and UL are not allowed in H1.
-				'#title'	: [  ], 
-		  	}
-		},
-	 	"com.gentics.aloha.plugins.Link": {
-		 	// all elements with no specific configuration may insert links
-			config : [ 'a' ],
-		  	editables : {
-				// No links in the title.
-				'#title'	: [  ]
-		  	},
-		  	// all links that match the targetregex will get set the target
- 			// e.g. ^(?!.*aloha-editor.com).* matches all href except aloha-editor.com
-		  	targetregex : '^(?!.*aloha-editor.com).*',
-		  	// this target is set when either targetregex matches or not set
-		    // e.g. _blank opens all links in new window
-		  	target : '_blank',
-		  	// the same for css class as for target
-		  	cssclassregex : '^(?!.*aloha-editor.com).*',
-		  	cssclass : 'aloha',
-		  	// use all resources of type website for autosuggest
-		  	objectTypeFilter: ['website'],
-		  	// handle change of href
-		  	onHrefChange: function( obj, href, item ) {
-			  	if ( item ) {
-					jQuery(obj).attr('data-name', item.name);
-			  	} else {
-					jQuery(obj).removeAttr('data-name');
-			  	}
-		  	}
-		},
-	 	"com.gentics.aloha.plugins.Table": { 
-		 	// all elements with no specific configuration are not allowed to insert tables
-			config : [ 'table' ]
-		}
-  	}
-};
-
-$(document).ready(function() {
-	$('#title').aloha();
-	$('#multicolumnElement').aloha();
+Aloha.ready(function() {
+	Aloha.require( ['aloha', 'aloha/jquery'], function( Aloha, $) {
+		$('#title').aloha();
+		$('#multicolumnElement').aloha();
+	});
 });
-
 
 </script>
 
@@ -111,11 +90,13 @@ $(document).ready(function() {
 				-webkit-column-gap:30px;
 				-moz-column-width:300px;
 				-moz-column-gap:30px;
+				column-width:300px;
+				column-gap:30px;
 				width:960px;
-				margin:0 auto;
-				
+				height: 1100px;
+				margin: 0 auto;
 			}
-						
+
 			h1 {
 				font-family: 'Komika Axis';
 				line-height: 140%;
@@ -174,7 +155,7 @@ $(document).ready(function() {
 		
 		<p>Circumambulate the city of a dreamy Sabbath afternoon. Go from Corlears Hook to Coenties Slip, and from thence, by Whitehall northward. What do you see? - Posted like silent sentinels all around the town, stand thousands upon thousands of mortal men fixed in ocean reveries. Some leaning against the spiles; some seated upon the pier-heads; some looking over the bulwarks of ships from China; some high aloft in the rigging, as if striving to get a still better seaward peep. But these are all landsmen; of week days pent up in lath and plaster - tied to counters, nailed to benches, clinched to desks. How then is this? Are the green fields gone? What do they here?</p>
 
-		<img src="moby-dick.jpg">
+		<p><img src="moby-dick.jpg"></p>
 		
 		<p>But look! here come more crowds, pacing straight for the water, and seemingly bound for a dive. Strange! Nothing will content them but the extremest limit of the land; loitering under the shady lee of yonder warehouses will not suffice. No. They must get just as nigh the water as they possibly can without falling in. And there they stand - miles of them - leagues. Inlanders all, they come from lanes and alleys, streets and avenues, - north, east, south, and west. Yet here they all unite. Tell me, does the magnetic virtue of the needles of the compasses of all those ships attract them thither?</p>
 
@@ -183,7 +164,7 @@ $(document).ready(function() {
 		<p>But here is an artist. He desires to paint you the dreamiest, shadiest, quietest, most enchanting bit of romantic landscape in all the valley of the Saco. What is the chief element he employs? There stand his trees, each with a hollow trunk, as if a hermit and a crucifix were within; and here sleeps his meadow, and there sleep his cattle; and up from yonder cottage goes a sleepy smoke. Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue. But though the picture lies thus tranced, and though this pine-tree shakes down its sighs like leaves upon this shepherd's head, yet all were vain, unless the shepherd's eye were fixed upon the magic stream before him.</p>
 		
 	</div>
-	
+		
 	</body>
 	
 </html>
