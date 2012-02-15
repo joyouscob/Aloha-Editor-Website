@@ -86,7 +86,7 @@ if ( $browser['browser'] == 'IE'  ) {
 			<div class="grid_14">
 				<h2>Aloha Magics Cubes</h2>
 				<p>The magic cube is a CSS3 implementation of <a href="http://www.zachstronaut.com/">Zachary Johnson</a>. You can edit content 
-				which usaually is not editable directly in desktop applications. Play around and try now how you can edit in future.</p>
+				which usually is not editable directly in desktop applications. Play around and try now how you can edit in future.</p>
 				<?php if ($support) { ?><a href="<?=$path?>demos/css3/">Try it out.</a>
 				<?php } else { ?><span style="color:red">Internet Explorer does not support this CSS3 feature. Use another browser to test this example.</span><?php } ?>
 			</div>

@@ -26,7 +26,7 @@
 				<img alt="" src="logo/Aloha%20Editor%20HTML5%20contenteditable%20transparent%20256.png" style="float:left;padding:25px 25px 5px 0; "><p>Aloha Editor works perfectly in all current browsers and websites using HTML4! It is the HTML5 Editor because it <a href="https://github.com/alohaeditor/Aloha-Editor/blob/dev/src/lib/util/dom.js#L98">implements all functionality</a>
 				respecting with no compromise the <a href="http://www.whatwg.org/specs/web-apps/current-work/">HTML5 specification</a>. It aims to generate <b>full compliant xHTML5 content</b>, but you don't need to use HTML5 specific methods, if you don't want to. The Aloha Editor uses and extends the attribute
 				<a href="http://blog.whatwg.org/the-road-to-html-5-contenteditable">contenteditable</a>, which was introduced in the HTML standard with version 5. Most current
-				browsers support that attribute, but their implementation is inconsitent due to erroneous 
+				browsers support that attribute, but their implementation is inconsistent due to erroneous 
 				implementations and the lack of detail of the HTML5 specification when it comes to DOM manipulation. Aloha Editor makes contenteditable useable.</p>
 				
 				<h2>The Aloha Spirit</h2>
