@@ -8,7 +8,8 @@
 	<meta name="google-site-verification" content="wF_Dg1xnxqgKrWdKF5nvw8khg5XsnRd7xHCkz8dHHw8" />
 	
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	
 	<meta name="keywords" content="HTML5, HTML5 Editor, WYSIWYG, Editor, WYSIWYG Editor, RTE, Richtext, Richtext Editor" />
 	<meta name="description" content="World's most advanced HTML5 WYSIWYG Editor gives you a total new experience when editing. It's faster than existing WYSIWYG technologies and offers unprecedented WYSIWYG functionalities."/>
 
@@ -16,9 +17,11 @@
 	<link href="/styles/grid_960.css" type="text/css" rel="stylesheet" />
 	<link href="/styles/mainstyle.css" type="text/css" rel="stylesheet" />
 
-<? 
-$aloha_path='/aloha-0.20/';
+<?php
+
+require_once 'aloha-editor-cdn.inc';
 $path = '/';
+
 ?>
 
 <?php if ( $_SERVER['SCRIPT_NAME'] == '/index.php' || 
