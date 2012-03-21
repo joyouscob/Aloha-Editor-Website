@@ -13,6 +13,7 @@
 			</div>
 			<div class="grid_7">
 				<ul class="topnav" style="float:right">
+					<li><a href="http://aloha-editor.org/blog" title="Aloha Editor Blog">Blog</a></li>
 					<li><a href="http://getsatisfaction.com/aloha_editor" title="Get help or help others">Forum</a></li>
 					<li><a href="https://github.com/alohaeditor/Aloha-Editor/issues" title="Our issue tracker">Issues</a></li>
 					<!-- li><a href="/api" title="a must for developers">API</a></li -->
