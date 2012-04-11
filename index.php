@@ -1,6 +1,15 @@
 <? include('inc/header.inc'); ?>
 
         <script type="text/javascript" src="/js/index.js"></script>
+
+        <!-- syntax highlighting -->
+        <script type="text/javascript" src="/js/sh/XRegExp.js"></script>
+		<script type="text/javascript" src="/js/sh/shCore.js"></script>
+		<script type="text/javascript" src="/js/sh/shBrushJScript.js"></script>
+		<script type="text/javascript" src="/js/sh/shBrushXml.js"></script>
+		
+		<link type="text/css" rel="stylesheet" href="/styles/sh/shCore.css"/>
+		<link type="text/css" rel="Stylesheet" href="/styles/sh/shThemeDefault.css" />
 </head>
 <body>
 	<div id="wrapper" class="container_20">
@@ -100,6 +109,74 @@ new TWTR.Widget({
 			</div>
 
 			<div class="clear"></div>
+
+		</div>
+
+		<div id="howto">
+			<div id="howto_intro">
+				<h2>minute setup guide</h2>
+				<p>Integrating Aloha Editor into your page and start editing your content is easy. That is all you need:</p>
+			</div>
+			<div>
+				<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+					<!doctype html>
+					<html xmlns="http://www.w3.org/1999/xhtml"> 
+					       <head>
+					              <title>Aloha Editor Example</title>
+
+					              <!-- load the Aloha Editor core and some plugins -->
+					              <script src="http://cdn.aloha-editor.org/current/lib/aloha.js"
+					                                   data-aloha-plugins="common/format,
+					                                                        common/list,
+					                                                        common/link,
+					                                                        common/highlighteditables">
+					              &lt;/script>
+					              
+					              <!-- load the Aloha Editor CSS styles -->
+					              <link href="http://cdn.aloha-editor.org/current/css/aloha.css" type="text/css" />
+
+					              <!-- make all elements with class="editable" editable with Aloha Editor -->
+					              <script type="text/javascript">
+					                     Aloha.ready( function() {
+					                            var $ = Aloha.jQuery;
+					                            $('.editable').aloha();
+					                     });
+					              &lt;/script>
+					       </head>
+					       <body>
+					              <h1 class="editable">Aloha Editor Example</h1>
+
+					              <p class="editable">Click to edit this paragraph.</p>
+
+					              <div class="editable">
+					                     <p>This is an editable div container.</p>
+					                     <p>Follow us on <a href="http://twitter.com/alohaeditor">Twitter</a>.</p>
+					                     <ul>
+					                            <li>list item one</li>
+					                            <li>list item two</li>
+					                     </ul>
+					              </div>
+
+					              <p>Use Aloha Editor your existing textarea elements:</p>
+					              <textarea class="editable">An editable textarea.</textarea>
+					       </body>
+					</html>
+				]]></script>
+
+				<p>
+					Further information about using Aloha Editor can be found in the <a href="/guides/" title="Aloha Editor Guides">Aloha Editor Guides</a>.
+				</p>
+
+			</div>
+
+
+			<script type="text/javascript">
+				SyntaxHighlighter.defaults['html-script'] = true;
+				SyntaxHighlighter.defaults['toolbar'] = false;
+				SyntaxHighlighter.defaults['highlight'] = [7,8,9,10,11,12,15,18,19,20,21,22,23];
+				SyntaxHighlighter.all();
+			</script>
+
 
 		</div>
 
