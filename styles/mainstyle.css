@@ -129,7 +129,7 @@ table.light td {
 }
 
 #content {
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 
 .block p {
@@ -369,4 +369,15 @@ td {
 /* twitter widget link style fix */
 .twtr-ft a, .twtr-ft span a, .twtr-doc a {
 	border-bottom: 0;
+}
+
+/* 5 min setup guide */
+#howto {
+	margin-bottom: 20px;
+}
+#howto_intro h2 {
+	background: transparent url('/images/html5-small.png') no-repeat left center;
+	padding-left:60px;
+	line-height: 56px;
+	margin-bottom: 10px;
 }
