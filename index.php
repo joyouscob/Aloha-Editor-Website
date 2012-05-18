@@ -133,7 +133,7 @@ new TWTR.Widget({
 					              &lt;/script>
 					              
 					              <!-- load the Aloha Editor CSS styles -->
-					              <link href="http://cdn.aloha-editor.org/current/css/aloha.css" type="text/css" />
+					              <link href="http://cdn.aloha-editor.org/current/css/aloha.css" rel="stylesheet" type="text/css" />
 
 					              <!-- make all elements with class="editable" editable with Aloha Editor -->
 					              <script type="text/javascript">
