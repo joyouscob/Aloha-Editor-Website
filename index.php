@@ -40,12 +40,19 @@
 			<div class="grid_1"><img src="/images/join_us.png" alt="Join Aloha HTML5 WYSIWYG Editor" style="width: 250px; position:relative; left: 85px; top: -60px; float:right; cursor:pointer;" onclick="window.location.href='/join_us.php'" /></div>
 			<div class="grid_6 base">
 
-<!--
 <div class="clickteaser" style="height:290px;text-align: center;padding:15px;margin-bottom:10px" onclick="window.location.href='/about.php#html5';">
 	<img alt="Aloha HTML5 WYSIWYG Editor logo" src="/logo/Aloha%20Editor%20HTML5%20sticker%20transparent%20256.png" style="width:256px"><br />
-	<div style="position:relative;top:-40px;margin:auto;"><a title="All about the Aloha HTML5 WYSIWYG Editor" href="about.php#html5">Read about HTML5</a>.<br /><a title="Aloha HTML5 WYSIWYG EDitor logos." href="logos.php">Download a logo</a>.<br /><a title="Aloha HTML5 WYSIWYG Editor T-shirts" href="http://aloha-editor.spreadshirt.at/" target="_blank">Aloha Editor - T-Shirt</a>.</div>
-</div>
+	<div style="position:relative;top:-40px;margin:auto;">
+<!--
+<a title="All about the Aloha HTML5 WYSIWYG Editor" href="about.php#html5">Read about HTML5</a>.<br /><a title="Aloha HTML5 WYSIWYG EDitor logos." href="logos.php">Download a logo</a>.<br /><a title="Aloha HTML5 WYSIWYG Editor T-shirts" href="http://aloha-editor.spreadshirt.at/" target="_blank">Aloha Editor - T-Shirt</a>.
 -->
+<br />
+<a title="News about Aloha Editor" href="/blog/"><strong>Read the Aloha Editor blog</strong></a><br />
+<a title="Twitter search about Aloha Editor" href="https://twitter.com/#!/search/aloha%20editor" target="_blank">What says twitter.com?</a>
+
+</div>
+</div>
+<!--
 <div align="right">
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
@@ -79,8 +86,9 @@ new TWTR.Widget({
 </script>
 <br />
 </div>
+-->
 
-                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-0.20.10.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version 0.20.10</span></a>
+                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-0.20.11.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version 0.20.11</span></a>
 
 				<a title="Aloha HTML5 WYSIWYG Editor license" id="license" href="/license.php">License</a><div title="Aloha HTML5 WYSIWYG Editor languages" id="language">Available in en, fr, de <a href="/join_us.php#translator">and more</a></div>
 
