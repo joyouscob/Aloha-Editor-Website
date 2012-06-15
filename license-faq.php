@@ -33,6 +33,7 @@
 							<li>to support continuous development of Aloha Editor</li>
 							<li>if you want to sell a commercial software and don't want to publish its source code</li>
 							<li>if you want to provide any service using Aloha Editor and don't want to publish its source code</li>
+							<li>if you prefer to use a non-GPL user interface framework for Aloha Editor (jQuery UI)</li>
 						</ul>
 					
 						<h4>Our interpretation of following AGPLv3 terms regarding Javascript code</h4>
@@ -75,11 +76,12 @@
 					<p>
 					Yes, you can and we encourage you to do so. This is part of free software. See <a href="http://www.gnu.org/philosophy/selling.html">http://www.gnu.org/philosophy/selling.html</a>.
 					</p>
-
+<!--
 					<h4 id=7>7. I want to sell Aloha Editor along with my commercial and non open-source CMS (project) and I don't want apply to the AGPLv3. Or I just don't worry about that. Can I do that?</h4>
 					<p>
 					Yes, you can distribute Aloha Editor with your commercial project. <a href="contact.php">Buy a commercial license</a> (to support the Aloha Editor community).
 					</p>
+-->
 				</div>
 				<div class="clear"></div>
 			</div>

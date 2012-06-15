@@ -35,7 +35,8 @@
 					<p>
 					If you are a commercial software developer and you want to release your software under a different license than AGPLv3, 
 					you may purchase commercial licenses from Gentics Software GmbH. By purchasing commercial licenses, Gentics offers you 
-					the freedom to choose different ways of licensing and get professional support from Aloha Editor developers. 
+					a different distribution of Aloha Editor based on jQuery UI user interface, which gives you the freedom to choose 
+					different ways of licensing and get professional support from Aloha Editor developers. 
 					<a href="<?=$path?>contact.php">Contact us for more information</a>!
 					</p>
 					

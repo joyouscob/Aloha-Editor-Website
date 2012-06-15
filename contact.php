@@ -72,7 +72,7 @@ include('inc/header.inc');
 				            <option value="I am a blogger and want to join the team">I am a blogger and want to join the team</option>
 				            <option value="I have an unlisted question and I did check the Forum!">I have an unlisted question and I checked the Forum!</option>
 				            <option value="I want to donate a million">I want to donate a million</option>
-				            <option value="I want to buy a commercial license">I want to buy a commercial license</option>
+<!--				            <option value="I want to buy a commercial license">I want to buy a commercial license</option>-->
 				          </select>
 				          </td>
 				          <td>&nbsp;</td>
