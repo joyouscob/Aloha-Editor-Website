@@ -1,4 +1,4 @@
-﻿<? include('inc/header.inc'); ?>
+<? include('inc/header.inc'); ?>
 
 </head>
 
