@@ -88,7 +88,7 @@ new TWTR.Widget({
 </div>
 -->
 
-                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-0.20.16.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version 0.20.16</span></a>
+                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-0.20.17.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version 0.20.17</span></a>
 
 				<a title="Aloha HTML5 WYSIWYG Editor license" id="license" href="/license.php">License</a><div title="Aloha HTML5 WYSIWYG Editor languages" id="language">Available in en, fr, de <a href="/join_us.php#translator">and more</a></div>
 
