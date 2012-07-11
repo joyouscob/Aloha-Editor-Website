@@ -41,10 +41,12 @@
 				be reverted.</p>
 
 				<h2>Why Aloha?</h2>
-				<p>"Clemens and I started the project on January 18th. We wanted to build the world's 
-				most advanced editor and I wanted a codename for the project. So we looked into wikipedia and
-				I found out that James Cook discovered Hawaii on January 18th. So I asked Clemens: What 
-				would the Hawaiians have said to James Cook? - The Aloha Editor was born" - Haymo Meran</p>
+				<p>"Clemens and I started the project on January 18th. We wanted to build the world's most advanced editor
+				and I wanted a codename for the project. So we looked into wikipedia and I found out that James Cook discovered
+				Hawaii on January 18th.<br />
+				Our Editor should invite people to create and change content easily. So "Aloha", the famous
+				hawaiian word meaning affection, peace, compassion and mercy and which is used as english greeting for saying
+				"hello" was our choice at hand - The Aloha Editor was born." - Haymo Meran</p>
 
 				<h2>Aloha Licensing</h2>
 				<p>Find out more about how to <a href="/license.php">license Aloha Editor</a> ...</p>
