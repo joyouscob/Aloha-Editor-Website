@@ -3,21 +3,25 @@
        <head>
               <title>Aloha Editor Example</title>
 
+              <!-- load the jQuery and require.js libraries -->
+              <script type="text/javascript" src="http://cdn.aloha-editor.org/current/lib/vendor/jquery-1.7.1.js"></script>
+              <script type="text/javascript" src="http://cdn.aloha-editor.org/current/lib/require.js"></script>
+
               <!-- load the Aloha Editor core and some plugins -->
               <script src="http://cdn.aloha-editor.org/current/lib/aloha.js"
-                                   data-aloha-plugins="common/format,
+                                   data-aloha-plugins="common/ui,
+                                                        common/format,
                                                         common/list,
                                                         common/link,
                                                         common/highlighteditables">
               </script>
-              
+
               <!-- load the Aloha Editor CSS styles -->
               <link href="http://cdn.aloha-editor.org/current/css/aloha.css" type="text/css" />
 
               <!-- make all elements with class="editable" editable with Aloha Editor -->
               <script type="text/javascript">
                      Aloha.ready( function() {
-                            var $ = Aloha.jQuery;
                             $('.editable').aloha();
                      });
               </script>

@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php require_once '../../inc/version.inc' ?>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -14,7 +15,11 @@
 
 
 <!-- turn an element into editable Aloha continuous text -->
-<link href="/aloha-0.20/css/aloha.css" type="text/css" rel="stylesheet" />
+<link href="<?=$alohaeditor_cdn?>css/aloha.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
+
 <script>
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 	
@@ -36,28 +41,26 @@
 	};
 </script>
 
-<script type="text/javascript" src="/aloha-0.20/lib/aloha.js"
-			data-aloha-plugins="common/format,
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/aloha.js"
+			data-aloha-plugins="common/ui,
+								common/format,
 		                        common/table,
 		                        common/list,
 		                        common/link,
+		                        common/image,
 		                        common/highlighteditables,
 		                        common/block,
 		                        common/undo,
 		                        common/contenthandler,
 		                        common/paste,
 		                        common/commands,
-		                        common/abbr,
-		                        extra/browser,
-		                        extra/linkbrowser"></script>
+		                        common/abbr"></script>
 
 <!-- turn an element into editable Aloha continuous text -->
 <script type="text/javascript">
 Aloha.ready(function() {
-	Aloha.require( ['aloha', 'aloha/jquery'], function( Aloha, $) {
-		// mark the editable parts
-		$('.editable').aloha();
-	});
+	// mark the editable parts
+	$('.editable').aloha();
 });
 
 </script>
@@ -224,14 +227,12 @@ No reload. No popup. No need to preview.</h2>
 			<div class="grid_12" id="site_info">
 				<div class="box">
 					<p>Fluid 960 Grid System, created by <a href="http://www.domain7.com/WhoWeAre/StephenBau.html">Stephen Bau</a>, based on the <a href="http://960.gs/">960 Grid System</a> by <a href="http://sonspring.com/journal/960-grid-system">Nathan Smith</a>. Released under the 
-		<a href="../../../licenses/GPL_license.txt">GPL</a> / <a href="../../../licenses/MIT_license.txt">MIT</a> <a href="../../../README.txt">Licenses</a>.</p>
+		<a href="./licenses/GPL_license.txt">GPL</a> / <a href="./licenses/MIT_license.txt">MIT</a> Licenses.</p>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
 		
-		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery-fluid16.js"></script>
 

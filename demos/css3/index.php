@@ -1,3 +1,4 @@
+<?php require_once '../../inc/version.inc' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--
@@ -7,11 +8,13 @@ Author: Zachary Johnson (http://www.zachstronaut.com)
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Aloha, World!</title>
+<title>Aloha isocube! -- CSS "3d" isometric cube</title>
 
 <!-- turn an element into editable Aloha continuous text -->
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
 
-<link href="/aloha-0.20/css/aloha.css" type="text/css" rel="stylesheet" />
+<link href="<?=$alohaeditor_cdn?>css/aloha.css" type="text/css" rel="stylesheet" />
 <script>
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 	// no settings for this demo
@@ -19,8 +22,9 @@ Author: Zachary Johnson (http://www.zachstronaut.com)
 	};
 </script>
 
-<script type="text/javascript" src="/aloha-0.20/lib/aloha.js"
-			data-aloha-plugins="common/format,
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/aloha.js"
+			data-aloha-plugins="common/ui,
+								common/format,
 		                        common/table,
 		                        common/list,
 		                        common/link,
@@ -30,25 +34,19 @@ Author: Zachary Johnson (http://www.zachstronaut.com)
 		                        common/contenthandler,
 		                        common/paste,
 		                        common/commands,
-		                        common/abbr,
-		                        extra/browser,
-		                        extra/linkbrowser"></script>
+		                        common/abbr"></script>
 
 <!-- turn an element into editable Aloha continuous text -->
 <script type="text/javascript">
 Aloha.ready(function() {
-	Aloha.require( ['aloha', 'aloha/jquery'], function( Aloha, $) {
-		// mark the editable parts
-		$('.aloha').aloha();
-	});
+	// mark the editable parts
+	$('.aloha').aloha();
 });
 
 </script>
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<title>Aloha isocube - CSS "3d" isometric cube</title>
+<link rel="stylesheet" href="./isocube_files/demo.css" type="text/css">
 
 <style type="text/css" media="screen">
 body {
@@ -71,11 +69,11 @@ a:hover {
     font-family: monospace;
     font-size: 24px;
     margin: 0 auto;
-    -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
-    -moz-transform: rotate(-45deg) skew(15deg, 15deg);
-    -o-transform: rotate(-45deg) skew(15deg, 15deg);
-    -ms-transform: rotate(-45deg) skew(15deg, 15deg);
-    transform: rotate(-45deg) skew(15deg, 15deg);
+    -webkit-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -ms-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -moz-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -o-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
 }
 
 .cube {
@@ -90,55 +88,60 @@ a:hover {
     height: 200px;
     overflow: hidden;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 24px;
 }
+
 
 .top {
     top: 0;
-    left: 89px;
+    left: 86px;
     background: #fff;
     color: #999;
-    -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
-    -moz-transform: rotate(-45deg) skew(15deg, 15deg);
-    -o-transform: rotate(-45deg) skew(15deg, 15deg);
-    -ms-transform: rotate(-45deg) skew(15deg, 15deg);
-    transform: rotate(-45deg) skew(15deg, 15deg);
+    /*    -webkit-transform: matrix(0.8965754721680534, -0.5176380902050416, 0.8965754721680536, 0.5176380902050415, 0, 0);*/
+    -webkit-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -ms-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -moz-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -o-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
 }
 
 .left {
-    top: 155px;
+    top: 165px;
     left: 0;
     background: #999;
     color: #333;
-    -webkit-transform: rotate(15deg) skew(15deg, 15deg);
-    -moz-transform: rotate(15deg) skew(15deg, 15deg);
-    -o-transform: rotate(15deg) skew(15deg, 15deg);
-    -ms-transform: rotate(15deg) skew(15deg, 15deg);
-    transform: rotate(15deg) skew(15deg, 15deg);
+    /*    -webkit-transform: matrix(0.8965754721680536, 0.5176380902050415, 0, 1.035276180410083, 0, 0);*/
+    -webkit-transform: rotate(30deg) skewX(30deg) skewY(0deg);
+    -ms-transform: rotate(30deg) skewX(30deg) skewY(0deg);
+    -moz-transform: rotate(30deg) skewX(30deg) skewY(0deg);
+    -o-transform: rotate(30deg) skewX(30deg) skewY(0deg);
+    transform: rotate(30deg) skewX(30deg) skewY(0deg);
 }
 
 .right {
-    top: 155px;
-    left: 178px;
+    top: 165px;
+    left: 172px;
     background: #ccc;
     color: #666;
-    -webkit-transform: rotate(-15deg) skew(-15deg, -15deg);
-    -moz-transform: rotate(-15deg) skew(-15deg, -15deg);
-    -o-transform: rotate(-15deg) skew(-15deg, -15deg);
-    -ms-transform: rotate(-15deg) skew(-15deg, -15deg);
-    transform: rotate(-15deg) skew(-15deg, -15deg);
+    /*    -webkit-transform: matrix(0.8965754721680536, -0.5176380902050415, 0, 1.035276180410083, 0, 0);*/
+    -webkit-transform: rotate(-30deg) skewX(-30deg) skewY(0deg);
+    -ms-transform: rotate(-30deg) skewX(-30deg) skewY(0deg);
+    -moz-transform: rotate(-30deg) skewX(-30deg) skewY(0deg);
+    -o-transform: rotate(-30deg) skewX(-30deg) skewY(0deg);
+    transform: rotate(-30deg) skewX(-30deg) skewY(0deg);
 }
 
+
 .shadow {
-    top: 310px;
-    left: -89px;
+    top: 330px;
+    left: -86px;
     background: black;
     opacity: 0.5;
-    -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
-    -moz-transform: rotate(-45deg) skew(15deg, 15deg);
-    -o-transform: rotate(-45deg) skew(15deg, 15deg);
-    -ms-transform: rotate(-45deg) skew(15deg, 15deg);
-    transform: rotate(-45deg) skew(15deg, 15deg);
+    -webkit-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -ms-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -moz-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    -o-transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
+    transform: rotate(-30deg) skewX(30deg) skewY(0deg) scaleY(0.87);
 }
 
 video {
@@ -153,15 +156,16 @@ video {
     -ms-transform: scale(0.5) translate(700px, 600px);
     transform: scale(0.5) translate(700px, 600px);
 }
-
-.green h1, .green h2, .green h3, .green h4, .green h5, .green h6 {
-	color: #6f6;
-}
 </style>
-
 </head>
 
 <body>
+
+	<div class="badgestronaut">
+	    <p><a href="http://www.zachstronaut.com/" data-bitly-type="bitly_hover_card">This HTML5 and CSS3 demo was created by zachstronaut.</a></p>
+
+	</div>
+
 
     
 <div id="backdrop">
@@ -221,7 +225,8 @@ dynamic content live and in place.
     <div class="face shadow"></div>
 </div>
 
-<p><em>Created by <a href="http://www.zachstronaut.com/">Zachary Johnson</a>.  Originally published on my old site <a href="http://tech.no.logi.es/woodshop/">tech.no.logi.es</a> in February 2009.</em></p>
+<p><em>Created by <a href="http://www.zachstronaut.com/" data-bitly-type="bitly_hover_card">Zachary Johnson</a>.  Originally published on my old site <a href="http://tech.no.logi.es/woodshop/" data-bitly-type="bitly_hover_card">tech.no.logi.es</a> in February 2009.</em></p>
+
 
 </body>
 </html>

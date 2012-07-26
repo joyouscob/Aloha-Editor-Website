@@ -1,3 +1,4 @@
+<?php require_once '../../inc/version.inc' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,11 @@
 
 <!-- turn an element into editable Aloha continuous text -->
 
-<link href="/aloha-0.20/css/aloha.css" type="text/css" rel="stylesheet" />
+<link href="<?=$alohaeditor_cdn?>css/aloha.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
+
 <script>
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 	
@@ -46,34 +51,32 @@
 			}
 		},
 		sidebar: {
-			disabled: true
+			disabled: false
 		}
 	};
 </script>
 
-<script type="text/javascript" src="/aloha-0.20/lib/aloha.js"
-			data-aloha-plugins="common/format,
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/aloha.js"
+			data-aloha-plugins="common/ui,
+								common/format,
 		                        common/table,
 		                        common/list,
 		                        common/link,
 		                        common/highlighteditables,
 		                        common/block,
 		                        common/undo,
+		                        common/image,
 		                        common/contenthandler,
 		                        common/paste,
 		                        common/commands,
-		                        common/abbr,
-		                        extra/browser,
-		                        extra/linkbrowser"></script>
+		                        common/abbr"></script>
 
 <script type="text/javascript">
 Aloha.ready(function() {
-	Aloha.require( ['aloha', 'aloha/jquery'], function( Aloha, $) {
-		// mark the editable parts
-		$('#title').aloha();
-		$('#teaser').aloha();
-		$('#content').aloha();	
-	});
+	// mark the editable parts
+	$('#title').aloha();
+	$('#teaser').aloha();
+	$('#content').aloha();	
 });
 
 </script>

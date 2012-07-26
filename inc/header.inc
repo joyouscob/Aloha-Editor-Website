@@ -16,19 +16,26 @@
 	<link href="/styles/grid_960.css" type="text/css" rel="stylesheet" />
 	<link href="/styles/mainstyle.css" type="text/css" rel="stylesheet" />
 
-<? 
-$aloha_path='/aloha-0.20/';
+<?php
+require_once './inc/version.inc';
 $path = '/';
 ?>
 
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
+
+
 <?php if ( $_SERVER['SCRIPT_NAME'] == '/index.php' || 
 			$_SERVER['SCRIPT_NAME'] == '/features.php' ) { ?>
-	<link href="<?=$aloha_path?>css/aloha.css" type="text/css" rel="stylesheet" />
-	
+	<link href="<?=$alohaeditor_cdn?>css/aloha.css" type="text/css" rel="stylesheet" />
+
 	<script>
 		var Aloha = window.Aloha || ( window.Aloha = {} );
 		
 		Aloha.settings = {
+			logLevels: { 'error': true, 'warn': true, 'info': true, 'debug': false, 'deprecated': true },
+			errorhandling: false,
+			ribbon: {enable: true},
 			locale: 'en',
 			plugins: {
 				format: {
@@ -41,8 +48,15 @@ $path = '/';
 		};
 	</script>
 
-	<script type="text/javascript" src="<?=$aloha_path?>lib/aloha.js"
-				data-aloha-plugins="common/format,
+
+    <script>
+		//Aloha.settings.jQuery = $.noConflict(true);
+		Aloha.settings.jQuery = $;
+    </script>
+
+	<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/aloha.js"
+				data-aloha-plugins="common/ui,
+									common/format,
 			                        common/table,
 			                        common/list,
 			                        common/link,
@@ -54,12 +68,8 @@ $path = '/';
 			                        common/characterpicker,
 			                        common/commands,
 			                        extra/flag-icons,
-			                        common/abbr,
-			                        extra/browser,
-			                        extra/linkbrowser"></script>
+			                        common/abbr"></script>
 <?php } ?>
-
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	
 	<script>
 	$(document).ready(function() {

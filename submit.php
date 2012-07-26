@@ -105,19 +105,18 @@ Thanks for thinking about using Aloha Editor, we have three different license mo
 
 <b>A. Aloha Editor developer license:</b>
 yearly license fee per developer: EUR 195,-
-includes access to community support forumand Software updates for one year for one developer working with Aloha Editor Code
-no need for publishing source code as stated in the AGPL license
+includes access to community support forum and Software updates for one year for one developer working with Aloha Editor Code
+no need for publishing source code as stated in the GPLv2 or later license
 
 <b>B. Aloha Editor domain license:</b>
 yearly license fee per domain: EUR 425,- (1 domain, maximum 1 mio uniqe clients per month)
 includes access to community support forum members
 and all updates for one year for all developer working with Aloha Editor Code for this domain.
-no need for publishing source code as stated in the AGPL license
+no need for publishing source code as stated in the GPLv2 or later license
 
 <b>C. Aloha Editor OEM license:</b>
-For projects where licenses above aren't suitable and where you want to deliver your product bundled with Aloha Editor for installation. These are subject to a individual inquiry and individual license terms according to the project. no need for publishing source code as stated in the AGPL license
+For projects where licenses above aren't suitable and where you want to deliver your product bundled with Aloha Editor for installation. These are subject to a individual inquiry and individual license terms according to the project. no need for publishing source code as stated in the GPLv2 or later license
 
-Just for info: right now we are using ExtJS from Sencha in Aloha Editor so just to be sure check if your project is covered by their open source license (gpl) or if you need a commercial license from them (<a target=\"_blank\" href=\"http://www.sencha.com\">http://www.sencha.com</a>) - however right now the Aloha Editor core team is working on developing another branch using jQuery instead of extJS.
 
 There is optional premium support (one 2 one support) for the Aloha Editor developer (300/year) or the domain license (600/year) domain license as well.
 

@@ -9,13 +9,13 @@
 		
 			<div id="teaser" class="container_20" style="padding-top:30px">
 				<div class="grid_20">
-					<h2>Aloha Editor AGPLv3 License FAQ</h2>
+					<h2>Aloha Editor GPLv2 License FAQ</h2>
 					<p>The following questions and answers are our personal interpretation and are not legally approved.</p>
 					<h3>In short terms</h3>
 
 						<h4>You are free to</h4>
 						<ul>
-							<li>include Aloha Editor in AGPLv3 or GPLv3 software and ship as one package </li>
+							<li>include Aloha Editor in GPLv2 or later software and ship as one package </li>
 							<li>include Aloha Editor in MIT, BSD or similar licensed software and ship as one package with a FOSS license exception</li>
 							<li>include Aloha Editor in commercial software and ship as one package</li>
 							<li>Use or sell services with software, where Aloha Editor is legally included</li>
@@ -36,14 +36,12 @@
 							<li>if you prefer to use a non-GPL user interface framework for Aloha Editor (jQuery UI)</li>
 						</ul>
 					
-						<h4>Our interpretation of following AGPLv3 terms regarding Javascript code</h4>
+						<h4>Our interpretation of following GPLv2 terms regarding Javascript code</h4>
 						<ul>
 							<li>"source code" are all single files as in the github repository.</li>
 							<li>"object code" are minified, combined or any with any other method modified "source code" files</li>
 							<li>"derived work" are all plugins or extensions  connected with Aloha Editor using the Aloha Editor API or other methods</li>
 						</ul>
-					
-					<p>We invite you to check <a href="http://fi.am/entry/agplv3-explained/">http://fi.am/entry/agplv3-explained/</a>.</p>
 					
 					<h3>Frequently asked questions and answers</h3>
 					

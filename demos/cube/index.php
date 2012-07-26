@@ -1,3 +1,4 @@
+<?php require_once '../../inc/version.inc' ?>
 <?php
 	# Check User Agent
 	$nocheck = isset($_GET['nocheck']);

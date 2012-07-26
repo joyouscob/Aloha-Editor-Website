@@ -1,9 +1,16 @@
+<?php require_once '../../inc/version.inc' ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head 
 profile="http://gmpg.org/xfn/11">
 
 <!-- ##LOAD ALOHA START## -->
-<link href="/aloha-0.20/css/aloha.css" type="text/css" rel="stylesheet" />
+<link href="<?=$alohaeditor_cdn?>css/aloha.css" type="text/css" rel="stylesheet" />
+
+
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
+
+
 <script>
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 	
@@ -25,37 +32,36 @@ profile="http://gmpg.org/xfn/11">
 	};
 </script>
 
-<script type="text/javascript" src="/aloha-0.20/lib/aloha.js"
-			data-aloha-plugins="common/format,
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/aloha.js"
+			data-aloha-plugins="common/ui,
+								common/format,
 		                        common/table,
 		                        common/list,
 		                        common/link,
 		                        common/highlighteditables,
 		                        common/block,
+		                        common/image,
 		                        common/undo,
 		                        common/contenthandler,
 		                        common/paste,
 		                        common/commands,
-		                        common/abbr,
-		                        extra/browser,
-		                        extra/linkbrowser"></script>
+		                        common/abbr"></script>
 
 <!-- turn an element into editable Aloha continuous text -->
 <script type="text/javascript">
 Aloha.ready(function() {
-	Aloha.require( ['aloha', 'aloha/jquery'], function( Aloha, $) {
-		// mark the editable parts
-		$('.story-excerpt').aloha();
-		$('.gallery-item').aloha();
-		$('#heading1').aloha();
-		$('#heading2').aloha();
-		$('#heading3').aloha();
+	// mark the editable parts
+	$('.story-excerpt').aloha();
+	$('.gallery-item').aloha();
+	$('#heading1').aloha();
+	$('#heading2').aloha();
+	$('#heading3').aloha();
 
-		// and the blocks
-		$('.gallery-icon').addClass('GENTICS_block').attr('contentEditable', false);
-		$('.meta').addClass('GENTICS_block').attr('contentEditable', false);
-		$('.story-excerpt > a').addClass('GENTICS_block').attr('contentEditable', false);
-	});
+	// and the blocks
+	$('.gallery-icon').addClass('GENTICS_block').attr('contentEditable', false);
+	$('.meta').addClass('GENTICS_block').attr('contentEditable', false);
+	$('.story-excerpt > a').addClass('GENTICS_block').attr('contentEditable', false);
+
 });
 
 </script>

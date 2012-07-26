@@ -52,43 +52,8 @@
 
 </div>
 </div>
-<!--
-<div align="right">
-<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'search',
-  search: 'alohaeditor',
-  interval: 30000,
-  title: 'Aloha Editor on Twitter.com',
-  subject: 'Aloha Tweets',
-  width: 220,
-  height: 150,
-  theme: {
-    shell: {
-      background: '#8ec1da',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#444444',
-      links: '#1986b5'
-    }
-  },
-  features: {
-    scrollbar: true,
-    loop: true,
-    live: true,
-    behavior: 'default'
-  }
-}).render().start();
-</script>
-<br />
-</div>
--->
 
-                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-0.20.17.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version 0.20.17</span></a>
+                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-<?=$alohaeditor_version?>.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version <?=$alohaeditor_version?></span></a>
 
 				<a title="Aloha HTML5 WYSIWYG Editor license" id="license" href="/license.php">License</a><div title="Aloha HTML5 WYSIWYG Editor languages" id="language">Available in en, fr, de <a href="/join_us.php#translator">and more</a></div>
 
@@ -132,16 +97,21 @@ new TWTR.Widget({
 					       <head>
 					              <title>Aloha Editor Example</title>
 
+					              <!-- load the jQuery and require.js libraries -->
+					              <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.2.js">&lt;/script>
+					              <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js">&lt;/script>
+
 					              <!-- load the Aloha Editor core and some plugins -->
-					              <script src="http://cdn.aloha-editor.org/current/lib/aloha.js"
-					                                   data-aloha-plugins="common/format,
+					              <script src="<?=$alohaeditor_cdn?>lib/aloha.js"
+					                                   data-aloha-plugins="common/ui,
+					                                                        common/format,
 					                                                        common/list,
 					                                                        common/link,
 					                                                        common/highlighteditables">
 					              &lt;/script>
 					              
 					              <!-- load the Aloha Editor CSS styles -->
-					              <link href="http://cdn.aloha-editor.org/current/css/aloha.css" rel="stylesheet" type="text/css" />
+					              <link href="<?=$alohaeditor_cdn?>css/aloha.css" rel="stylesheet" type="text/css" />
 
 					              <!-- make all elements with class="editable" editable with Aloha Editor -->
 					              <script type="text/javascript">
@@ -181,7 +151,7 @@ new TWTR.Widget({
 			<script type="text/javascript">
 				SyntaxHighlighter.defaults['html-script'] = true;
 				SyntaxHighlighter.defaults['toolbar'] = false;
-				SyntaxHighlighter.defaults['highlight'] = [7,8,9,10,11,12,15,18,19,20,21,22,23];
+				SyntaxHighlighter.defaults['highlight'] = [6,7,8,10,11,12,13,14,15,16,17,19,20,22,23,24,25,26,27,28];
 				SyntaxHighlighter.all();
 			</script>
 

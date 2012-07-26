@@ -20,10 +20,10 @@
 					<h3>Open Source License.</h3>
 					<p><img alt="" src="http://www.opensource.org/files/garland_logo.png" style="float:left; padding-right:20px;"/>We want to 
 					keep this work open to all now and in future. The Open Source version of this great software is released under the terms of  
-					<a href="http://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3 License</a>. General Public Licenses are intended 
+					<a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GPLv2</a> or later. General Public Licenses are intended 
 					to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users.
 					You may be allowed to redistribute Aloha Editor along with other opensource projects that are MIT, BSD or similar licensed with 
-					the FOSS license exception. Eg. <a href="http://locomotivecms.com/">Locomotive CMS</a> is MIT, Aloha Editor is AGPLv3, with the FOSS exception, Locomotive CMS can distribute Aloha Editor and remain MIT, but Aloha Editor will remain AGPLv3. <a href="<?=$path?>contact.php">Contact us to get a FOSS license exception</a>!
+					the FOSS license exception. Eg. <a href="http://locomotivecms.com/">Locomotive CMS</a> is MIT, Aloha Editor is GPLv2 or later, with the FOSS exception, Locomotive CMS can distribute Aloha Editor and remain MIT, but Aloha Editor will remain GPLv2 or later. <a href="<?=$path?>contact.php">Contact us to get a FOSS license exception</a>!
 					</p>
 					<h3>Language files License.</h3>
 					<p><img alt="" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="float:left; padding-right:20px;"/> All language translations
@@ -33,10 +33,8 @@
 					</p>
 					<h3>Commercial License.</h3>
 					<p>
-					If you are a commercial software developer and you want to release your software under a different license than AGPLv3, 
-					you may purchase commercial licenses from Gentics Software GmbH. By purchasing commercial licenses, Gentics offers you 
-					a different distribution of Aloha Editor based on jQuery UI user interface, which gives you the freedom to choose 
-					different ways of licensing and get professional support from Aloha Editor developers. 
+						The commercial version of Aloha Editor allows to use, modify, copy and distribute without
+						any restrictions as stated in the commercial license agreement. 
 					<a href="<?=$path?>contact.php">Contact us for more information</a>!
 					</p>
 					

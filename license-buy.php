@@ -16,7 +16,7 @@
 						<h4>Aloha Editor Developer License</h4>
 						<ul>
 							<li>includes access to community support forum and software updates for one year for one developer working with Aloha Editor Code</li>
-							<li>no need for publishing source code as stated in the AGPL license</li>
+							<li>no need for publishing source code as stated in the GPLv2 license</li>
 							<li>yearly license fee per developer: 195,- EUR excl. VAT (234,- EUR incl. 20% VAT)<br />
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -30,7 +30,7 @@
                                                 <h4>Aloha Editor Domain License</h4>
                                                 <ul>
                                                         <li>includes access to community support forum and software updates for one year for all developers working with Aloha Editor Code for this domain</li>
-                                                        <li>no need for publishing source code as stated in the AGPL license</li>
+                                                        <li>no need for publishing source code as stated in the GPLv2 license</li>
                                                         <li>yearly license fee per domain: 425,- EUR excl. VAT (510,- EUR incl. 20% VAT)<br />
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -44,7 +44,7 @@
                                                 <h4>Aloha Editor OEM License</h4>
                                                 <ul>
 							<li>For projects where licenses above aren't suitable and where you want to deliver your product bundled with Aloha Editor for installation. These are subject to a individual inquiry and individual license terms according to the project.</li>
-							<li>no need for publishing source code as stated in the AGPL license</li>
+							<li>no need for publishing source code as stated in the GPLv2 license</li>
 							<li><a href="/contact.php">Please contact us for further information</a></li>
 						</ul>
 

@@ -1,11 +1,11 @@
 Aloha.ready(function() {
-	Aloha.require( ['aloha', 'aloha/jquery', 'aloha/floatingmenu'], function( Aloha, $, FloatingMenu) {
+	Aloha.require( ['aloha', 'ui/scopes', 'ui/toolbar'], function( Aloha, Scopes, FloatingMenu) {
 
 	setTimeout(function () {
 		// unpin a pinned floating menu
-		if (FloatingMenu.pinned) {
+		/*if (FloatingMenu.pinned) {
 			FloatingMenu.togglePin();
-		}
+		}*/
 
 		var m = jQuery('#mousepointer');
 		m.css('position', 'relative')
@@ -46,11 +46,12 @@ Aloha.ready(function() {
 		    	range.select();
 		    	Aloha.Selection.updateSelection();
 				
-				FloatingMenu.setScope('Aloha.continuoustext');
-				var target = FloatingMenu.calcFloatTarget(Aloha.Selection.getRangeObject());
-				if (target) {
-					FloatingMenu.floatTo(target);
-				}
+				//FloatingMenu.show();
+				Scopes.setScope('Aloha.continuoustext');
+				//var target = FloatingMenu.calcFloatTarget(Aloha.Selection.getRangeObject());
+				//if (target) {
+				//	FloatingMenu.floatTo(target);
+				//}
 			})
 			// fly towards the B-button
 			.animate({

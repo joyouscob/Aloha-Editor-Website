@@ -1,3 +1,4 @@
+<?php require_once '../../inc/version.inc' ?>
 <!DOCTYPE html>
 <!-- 
 Author: Joshua Kelly (http://www.kmsm.ca/)
@@ -7,7 +8,11 @@ Author: Joshua Kelly (http://www.kmsm.ca/)
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Aloha, World!</title>
 
-<link href="/aloha-0.20/css/aloha.css" type="text/css" rel="stylesheet" />
+<link href="<?=$alohaeditor_cdn?>css/aloha.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
+
 <script>
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 	
@@ -33,6 +38,12 @@ Author: Joshua Kelly (http://www.kmsm.ca/)
 					'#title'	: [  ]
 			  	}
 			},
+			abbr: {
+				editables : {
+					// No abbr in the title.
+					'#title'	: [  ]
+			  	}
+			},
 			image: {
 				'fixedAspectRatio': true,
 				'maxWidth': 1024,
@@ -51,37 +62,72 @@ Author: Joshua Kelly (http://www.kmsm.ca/)
 		},
 		sidebar: {
 			disabled: true
+		},
+		contentHandler: {
+		    allows: {
+				elements: [
+					'a', 'abbr', 'b', 'blockquote', 'br', 'caption', 'cite', 'code', 'col',
+					'colgroup', 'dd', 'del', 'dl', 'dt', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+					'i', 'img', 'li', 'ol', 'p', 'pre', 'q', 'small', 'strike', 'strong',
+					'sub', 'sup', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead', 'tr', 'u',
+					'ul', 'span', 'hr', 'object', 'div'
+				],
+
+				attributes: {
+					'a': ['href', 'title', 'id', 'class', 'target', 'data-gentics-aloha-repository', 'data-gentics-aloha-object-id'],
+					'div': [ 'id', 'class'],
+					'abbr': ['title'],
+					'blockquote': ['cite'],
+					'br': ['class'],
+					'col': ['span', 'width'],
+					'colgroup': ['span', 'width'],
+					'img': ['align', 'alt', 'height', 'src', 'title', 'width', 'class'],
+					'ol': ['start', 'type'],
+					'q': ['cite'],
+					'p': ['class'],
+					'table': ['summary', 'width'],
+					'td': ['abbr', 'axis', 'colspan', 'rowspan', 'width'],
+					'th': ['abbr', 'axis', 'colspan', 'rowspan', 'scope', 'width'],
+					'ul': ['type'],
+					'span': ['class','style','lang','xml:lang']
+				},
+
+				protocols: {
+					'a': {'href': ['ftp', 'http', 'https', 'mailto', '__relative__']},
+					'blockquote': {'cite': ['http', 'https', '__relative__']},
+					'img': {'src' : ['http', 'https', '__relative__']},
+					'q': {'cite': ['http', 'https', '__relative__']}
+				}
+			}
 		}
 	};
 </script>
 
-<script type="text/javascript" src="/aloha-0.20/lib/aloha.js"
-			data-aloha-plugins="common/format,
+<script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/aloha.js"
+			data-aloha-plugins="common/ui,
+								common/format,
 		                        common/table,
 		                        common/list,
 		                        common/link,
 		                        common/highlighteditables,
 		                        common/block,
 		                        common/undo,
+		                        common/image,
 		                        common/contenthandler,
 		                        common/paste,
 		                        common/commands,
-		                        common/abbr,
-		                        extra/browser,
-		                        extra/linkbrowser"></script>
+		                        common/abbr"></script>
 
 <!-- turn an element into editable Aloha continuous text -->
 <script type="text/javascript">
 Aloha.ready(function() {
-	Aloha.require( ['aloha', 'aloha/jquery'], function( Aloha, $) {
-		$('#title').aloha();
-		$('#multicolumnElement').aloha();
-	});
+	$('#title').aloha();
+	$('#multicolumnElement').aloha();
 });
 
 </script>
 
-		<link href="http://kernest.com/fonts/komika-axis.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lobster" media="screen" rel="stylesheet" type="text/css" />
 		
 		<style type="text/css">
 			
@@ -98,37 +144,37 @@ Aloha.ready(function() {
 			}
 
 			h1 {
-				font-family: 'Komika Axis';
+				font-family: 'Lobster', Georgia, sans-serif;
 				line-height: 140%;
 				text-rendering: optimizeLegibility;
 				margin:20px auto;
-				font-size:10.5em;
+				font-size:12em;
 				color: #2a719e;
 				text-align:center;
 			}
 			
-			.p-intro {
+			p.p-intro {
 				font-size: 1.5em;
 				line-height: 1.3em;
 				text-align:left !important;
 			}
 			
 			p {
-				font-family: georgia;
+				font-family: Georgia;
 				font-size: 1em;
 				line-height: 1.4em;
 				text-align: justify;
 			}
 
-			NO.p-intro:first-letter  {
+			p.p-intro:first-letter  {
 				color: #5499c5;
 				display: inline;
 				float: left;
-				font-size: 4em;
+				font-size: 3em;
 				margin: 0px;
 				padding: 0.2em 0.1em 0 0.1em;
 				text-transform: capitalize;
-				font-family: 'Komika Axis';
+				font-family: 'Lobster';
 			}
 			
 			img {
