@@ -71,7 +71,7 @@ Aloha.ready(function() {
 				marginLeft: 0,
 				marginBottom: 0
 			}, 10, 'swing', function () {
-		    	jQuery('.aloha-button-b').click();
+		    	jQuery('.aloha-icon-bold').parent('button').click();
 			})
 			// fly back home
 			.animate({
