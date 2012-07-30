@@ -13,7 +13,7 @@
 				</p>
 				<p style="clear:both">
 				<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("nkarageuzian@gmail.com")));?>.jpg" style="float:left; padding:5px" />
-				<a href="http://nka.me/">Nicolas Karageuzian</a><br />
+				<a href="http://nka.re/">Nicolas Karageuzian</a><br />
 				Javascript Wizard<br />
 				<img alt="" src="<?=$path?>flags/fr.gif" style="padding-right:5px" />France
 				</p>
