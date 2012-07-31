@@ -55,10 +55,10 @@
 				<div class="grid_20">
 					<h3 class="new">Repositories - connect everything</h3>
 					<img src="images/repository_browser.png" alt="Aloha Links" title="Aloha Links" class="right" style="width:400px;padding-left:20px;padding-bottom:20px" />	
-					<p>The <a href="http://aloha-editor.com/docs/?class=Repository">Aloha Editor Repository API</a> 
+					<p>The <a href="http://aloha-editor.org/guides/repository.html">Aloha Editor Repository API</a> 
 					makes it easy to connect any backend system. The 
 					Repository API is close to the CMIS standard and offers a lot of functionalities - 
-					<a href="http://www.aloha-editor.com/wiki/index.php/Repository">but waaaaays easier</a>. Among those
+					<a href="http://aloha-editor.org/guides/repository.html">but waaaaays easier</a>. Among those
 					the possibilty to search for objects with <b>type ahead</b> or more structured with a <b>repository browser</b>,
 					which gives you a tree view like explorer or finder. Furthermore the repository lets you select objects
 					by an object type, so you can integrate <b>links</b>, <b>images</b> but even <b>products</b> or <b>any other type</b> you define.
