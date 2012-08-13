@@ -1,7 +1,7 @@
 				<h3>Aloha Editor Core Developer</h3>
 				<p style="clear:both">
 				<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("h.meran@gentics.com")));?>.jpg" style="float:left; padding:5px" />
-				<a href="http://haymo.org">Haymo Meran</a><br />
+				<a href="http://twitter.com/draftkraft">Haymo Meran</a><br />
 				Project leader<br />
 				<img alt="" src="<?=$path?>flags/it.gif" style="padding-right:5px" />Italy (South Tirol)
 				</p>
