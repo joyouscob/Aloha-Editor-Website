@@ -23,8 +23,8 @@
 <FilesMatch "\.(htm|html)$">
 	SetHandler application/x-httpd-php
 
-	php_value auto_prepend_file "./runty/prepend.php"
-	php_value auto_append_file "./runty/append.php"
+	#php_value auto_prepend_file "./runty/prepend.php"
+	#php_value auto_append_file "./runty/append.php"
 </FilesMatch>
 
 <IfModule mod_php5.c>
