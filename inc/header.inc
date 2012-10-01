@@ -17,7 +17,9 @@
 	<link href="/styles/mainstyle.css" type="text/css" rel="stylesheet" />
 
 <?php
-require_once './inc/version.inc';
+if (file_exists('./inc/version.inc')) {
+	require_once './inc/version.inc';
+}
 $path = '/';
 ?>
 
