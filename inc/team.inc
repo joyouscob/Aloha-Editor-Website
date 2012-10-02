@@ -56,6 +56,12 @@
 
 				<h3>Aloha Editor Contributor</h3>
 				<p style="clear:both">
+				<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("isburger@gmail.com")));?>.jpg" style="float:left; padding:5px" />
+				<a href="https://github.com/izak">Izak Burger</a><br />
+				Javascript Guru<br />
+				<img alt="" src="<?=$path?>flags/za.gif" style="padding-right:5px" />South Africa
+				</p>
+				<p style="clear:both">
 				<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("aurelien.manca@gmail.com")));?>.jpg" style="float:left; padding:5px" />
 				<a href="http://plop-cms.com">Aurelien Manca</a><br />
 				Javascript Guru<br />

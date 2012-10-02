@@ -1,4 +1,4 @@
-<? 
+<?php
 $lang['en'] = "English";
 $lang['ar'] = "Arabic";
 $lang['bn'] = "Bengali";
@@ -28,6 +28,7 @@ $lang['sv'] = "Swedish";
 $lang['sw'] = "Swahili";
 $lang['tl'] = "Tagalog";
 $lang['tr'] = "Turkish";
+$lang['ca'] = "Catalan";
 
 
 /*
@@ -68,33 +69,35 @@ $user[] = Array('name'=>'Miguel Angelyanez','email'=>'miguelangelyanez@conecta6.
 $user[] = Array('name'=>'Antonio Azevedo','email'=>'tony.yesitsme@gmail.com','langs'=>Array('pt'),'lname'=>'','link'=>'');
 $user[] = Array('name'=>'Mario','email'=>'marioraudsepp@gmail.com','langs'=>Array('et'),'flags'=>Array('ee'),'lname'=>'','link'=>'');
 $user[] = Array('name'=>'mert','email'=>'mert@merttorun.com','langs'=>Array('tr'),'flags'=>Array('tr'),'lname'=>'','link'=>'');
+$user[] = Array('name'=>'Pere Orga','email'=>'gotrunks@gmail.com','langs'=>Array('ca'),'flags'=>Array('ca'),'lname'=>'','link'=>'');
 ?>
-		
-				<h2>Do you speak <? echo $lang[array_rand($lang)]; ?>? We do.</h2>
-				<br /><p>A lot of engaged people help translating the Aloha Editor in different languages. We thank all the supporters listed here and those not listed as well. 
-				Join this international and multi cultural project team! No programming knowledge necessary to translate. 
-				A machine translation functionality helps to get fast results.</p>
-				<p><a href="http://mygengo.com/string/p/aloha-editor-1/access/request">I will translate.</a> 
-				<i>Please add a message with the lanugage you will translate to when registering.<br /> 
-				<a href="http://mygengo.com/string/p/aloha-editor-1/">Check translation state</a>.We will add not listed languages.</i> 
-				</p>
 
-				<h3>Translation heros</h3>
-<? foreach ($user as $u) { 
-	if (empty($u['flags'])) $u['flags'] = array();
-	
+<h2>Do you speak <? echo $lang[array_rand($lang)]; ?>? We do.</h2>
+
+<br />
+
+<p>A lot of engaged people help translating the Aloha Editor in different languages. We thank all the supporters listed here and those not listed as well. Join this international and multi cultural project team! No programming knowledge necessary to translate. A machine translation functionality helps to get fast results.</p>
+
+<p><a href="http://mygengo.com/string/p/aloha-editor-1/access/request">I will translate.</a> 
+<i>Please add a message with the lanugage you will translate to when registering.<br /> 
+<a href="http://mygengo.com/string/p/aloha-editor-1/">Check translation state</a>.We will add not listed languages.</i> 
+</p>
+
+<h3>Translation heros</h3>
+<?php foreach ($user as $u) {
+if (empty($u['flags'])) $u['flags'] = array();
 ?>
-				<p style="float:left;width:325px; overflow:hidden">
-                                <img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim($u['email'])));?>.jpg" style="float:left; padding:5px" />
-                                <?=$u['name']?> <? if ($u['lname']) echo "($u[lname])"; ?><br />
-<? foreach ($u['langs'] as $k=>$l) {
-	
-	if (empty($lang['l.'.$l])) $lang['l.'.$l] = $lang[$l];
-	?>
-	
-                                <img title='<?=$lang[$l]?>' src="<?=$path?>flags/<?=($u['flags'])?$u['flags'][$k]:$l?>.gif" style="padding-right:5px" /> <?=($lang['l.'.$l])?"<span title='".$lang[$l]."'>".$lang['l.'.$l]."</span>":$lang[$l]?><br />
-<? } ?> 
-                                <a href="<?=$u['link']?>"><?=substr($u['link'],7)?></a><br />
-                                </p>
-<? } ?>
+	<p style="float:left;width:325px; overflow:hidden">
+		<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim($u['email'])));?>.jpg" style="float:left; padding:5px" />
+		<?=$u['name']?> <? if ($u['lname']) echo "($u[lname])"; ?><br />
+		
+		<?php foreach ($u['langs'] as $k=>$l) {
+			if (empty($lang['l.'.$l])) $lang['l.'.$l] = $lang[$l];
+		?>
+
+		<img title='<?=$lang[$l]?>' src="<?=$path?>flags/<?=($u['flags'])?$u['flags'][$k]:$l?>.gif" style="padding-right:5px" /> <?=($lang['l.'.$l])?"<span title='".$lang[$l]."'>".$lang['l.'.$l]."</span>":$lang[$l]?><br />
+		<?php } ?> 
+			<a href="<?=$u['link']?>"><?=substr($u['link'],7)?></a><br />
+		</p>
+		<?php } ?>
 
