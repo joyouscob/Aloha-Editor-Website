@@ -66,13 +66,13 @@ include('inc/header.inc');
 				          <td><select name="subject" id="subject">
 				            <option value="" selected="selected"> - Choose -</option>
 				            <option value="I am a Javascript lover and want to join the team">I am a Javascript guru and want to join the team</option>
+				            <option value="I want to buy a commercial license">I want to buy a commercial license</option>
 				            <option value="I am a cook and want to join the team">I am a cook and want to join the team</option>
 				            <option value="I am a webdesigner and want to join the team">I am a webdesigner and want to join the team</option>
 				            <option value="I am a translator and want to join the team">I am a translator and want to join the team</option>
 				            <option value="I am a blogger and want to join the team">I am a blogger and want to join the team</option>
 				            <option value="I have an unlisted question and I did check the Forum!">I have an unlisted question and I checked the Forum!</option>
 				            <option value="I want to donate a million">I want to donate a million</option>
-<!--				            <option value="I want to buy a commercial license">I want to buy a commercial license</option>-->
 				          </select>
 				          </td>
 				          <td>&nbsp;</td>
