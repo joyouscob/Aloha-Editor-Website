@@ -69,7 +69,8 @@ $user[] = Array('name'=>'Miguel Angelyanez','email'=>'miguelangelyanez@conecta6.
 $user[] = Array('name'=>'Antonio Azevedo','email'=>'tony.yesitsme@gmail.com','langs'=>Array('pt'),'lname'=>'','link'=>'');
 $user[] = Array('name'=>'Mario','email'=>'marioraudsepp@gmail.com','langs'=>Array('et'),'flags'=>Array('ee'),'lname'=>'','link'=>'');
 $user[] = Array('name'=>'mert','email'=>'mert@merttorun.com','langs'=>Array('tr'),'flags'=>Array('tr'),'lname'=>'','link'=>'');
-$user[] = Array('name'=>'Pere Orga','email'=>'gotrunks@gmail.com','langs'=>Array('ca'),'flags'=>Array('ca'),'lname'=>'','link'=>'');
+
+$user[] = Array('name'=>'Pere Orga','email'=>'gotrunks@gmail.com','langs'=>Array('ca'),'flags'=>Array('cat'),'lname'=>'','link'=>'');
 ?>
 
 <h2>Do you speak <? echo $lang[array_rand($lang)]; ?>? We do.</h2>
