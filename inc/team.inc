@@ -256,7 +256,7 @@
 
 				<p style="clear:both">
 					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("iturgeon@gmail.com")));?>.jpg" style="float:left; padding:5px" />
-					<a href="http://github.com/iturgeon">Ian Turgeon</a><br />
+					<a href="http://ianturgeon.com">Ian Turgeon</a><br />
 					Web developer<br />
 					<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
 				</p>
