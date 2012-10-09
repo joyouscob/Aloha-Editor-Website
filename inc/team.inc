@@ -239,19 +239,27 @@
 				<img alt="" src="<?=$path?>flags/at.gif" style="padding-right:5px" />Austria
 				</p>
 				
-                                <p style="clear:both">
-                                <img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("h.haas@gentics.com")));?>.jpg" style="float:left; padding:5px" />
-                                <a href="http://www.darky.at/">Harald Haas</a><br />
-                                Community Angel<br />
-                                <img alt="" src="<?=$path?>flags/at.gif" style="padding-right:5px" />Austria
-                                </p>
+				<p style="clear:both">
+					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("h.haas@gentics.com")));?>.jpg" style="float:left; padding:5px" />
+					<a href="http://www.darky.at/">Harald Haas</a><br />
+					Community Angel<br />
+					<img alt="" src="<?=$path?>flags/at.gif" style="padding-right:5px" />Austria
+				</p>
 
-                                <p style="clear:both">
-                                <img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("mike@appendto.com")));?>.jpg" style="float:left; padding:5px" />
-                                <a href="http://mike-hostetler.com/">Mike Hostetler</a><br />
-                                Javascript Guru<br />
-                                <img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
-                                </p>
+				<p style="clear:both">
+					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("mike@appendto.com")));?>.jpg" style="float:left; padding:5px" />
+					<a href="http://mike-hostetler.com/">Mike Hostetler</a><br />
+					Javascript Guru<br />
+					<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
+				</p>
+
+
+				<p style="clear:both">
+					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("iturgeon@gmail.com")));?>.jpg" style="float:left; padding:5px" />
+					<a href="http://github.com/iturgeon">Ian Turgeon</a><br />
+					Web developer<br />
+					<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
+				</p>
 
 				<h3>Thanks to</h3>
 				<p><a href="http://drewwilson.com">Drew Wilson</a><br/>
