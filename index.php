@@ -98,8 +98,8 @@
 					              <title>Aloha Editor Example</title>
 
 					              <!-- load the jQuery and require.js libraries -->
-					              <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.2.js">&lt;/script>
 					              <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js">&lt;/script>
+					              <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.2.js">&lt;/script>
 
 					              <!-- load the Aloha Editor core and some plugins -->
 					              <script src="<?=$alohaeditor_cdn?>lib/aloha.js"
