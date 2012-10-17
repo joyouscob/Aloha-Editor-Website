@@ -253,13 +253,22 @@
 					<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
 				</p>
 
-
 				<p style="clear:both">
 					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("iturgeon@gmail.com")));?>.jpg" style="float:left; padding:5px" />
 					<a href="http://ianturgeon.com">Ian Turgeon</a><br />
+					<!-- http://github.com/iturgeon -->
 					Web developer<br />
 					<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
 				</p>
+
+				<p style="clear:both">
+					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("ljean@apidev.fr")));?>.jpg" style="float:left; padding:5px" />
+					<a href="http://www.apidev.fr">Luc JEAN</a><br />
+					<!-- http://github.com/ljean -->
+					Web developer<br />
+					<img alt="" src="<?=$path?>flags/fr.gif" style="padding-right:5px" />France
+				</p>
+
 
 				<h3>Thanks to</h3>
 				<p><a href="http://drewwilson.com">Drew Wilson</a><br/>
