@@ -51,18 +51,20 @@
 				<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FAloha-Editor%2F186840001331784&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=40" style="border:none; overflow:hidden; width:300px; height:40px; border: 0px;" ></iframe>
 
 			</div>
-			<div class="grid_1"><img src="/images/join_us.png" alt="Join Aloha HTML5 WYSIWYG Editor" style="width: 250px; position:relative; left: 85px; top: -60px; float:right; cursor:pointer;" onclick="window.location.href='/join_us.php'" /></div>
+			<div class="grid_1"><img src="/images/join_us.png" alt="Join Aloha HTML5 WYSIWYG Editor" style="width: 250px; position:relative; left: 85px; top: -60px; float:right; cursor:pointer; z-index: 10000;" onclick="window.location.href='/join_us.php'" /></div>
 			<div class="grid_6 base">
 
-<div class="clickteaser" style="height:290px;text-align: center;padding:15px;margin-bottom:10px" onclick="window.location.href='/about.php#html5';">
+<div class="clickteaser" style="height:380px;text-align: center;padding:15px;margin-bottom:10px;position: relative;top: -30px; z-index: 10001;" onclick="window.location.href='http://events.jquery.org/2013/eu/';">
 	
-	<a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank"><img style="border: 0px;" title="jQuery EU 2013 banner" src="http://aloha-editor.org/blog/wp-content/uploads/2012/10/jQuery_banner_297x372-1-239x300.png" alt="jQuery EU 2013" height="280px"></a>
+	<a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank" style="border: 0px;"><img style="border: 0px" title="jQuery EU 2013" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/200px-JQuery_logo.svg.png" alt="jQuery EU 2013" width="200px"></a>
+	
+	<a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank" style="border: 0px;"><img style="border: 0px; margin-bottom: 10px" title="jQuery EU 2013" src="http://aloha-editor.org/blog/wp-content/uploads/2012/10/jQuery_banner_297x372-1-239x300.png" alt="jQuery EU 2013" height="280px"></a>
 	
 	<!--
 	<img alt="Aloha HTML5 WYSIWYG Editor logo" src="/logo/Aloha%20Editor%20HTML5%20sticker%20transparent%20256.png" style="width:256px"><br />
 	-->
 
-	<div style="position:relative;top:-40px;margin:auto;">
+	<div style="position:relative;top:-30px;margin:auto;">
 <!--
 <a title="All about the Aloha HTML5 WYSIWYG Editor" href="about.php#html5">Read about HTML5</a>.<br /><a title="Aloha HTML5 WYSIWYG EDitor logos." href="logos.php">Download a logo</a>.<br /><a title="Aloha HTML5 WYSIWYG Editor T-shirts" href="http://aloha-editor.spreadshirt.at/" target="_blank">Aloha Editor - T-Shirt</a>.
 -->
@@ -73,11 +75,13 @@
 </div>
 </div>
 
+<div style="position:relative;top:-20px;margin:auto;">
                                 <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-<?=$alohaeditor_version?>.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version <?=$alohaeditor_version?></span></a>
 
 				<a title="Aloha HTML5 WYSIWYG Editor license" id="license" href="/license.php">License</a><div title="Aloha HTML5 WYSIWYG Editor languages" id="language">Available in en, fr, de <a href="/join_us.php#translator">and more</a></div>
 
 			</div>
+		</div>
 	 		<div class="clear"></div>
 
 		</div>
