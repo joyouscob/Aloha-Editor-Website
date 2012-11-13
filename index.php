@@ -31,8 +31,9 @@
 				<h1>Aloha Editor - HTML5 WYSIWYG Editor</h1>
 				<p>The world's most advanced browser HTML5 based WYSIWYG editor <a href="/demos.php">lets you experience</a> a whole new way of editing. It's <a title="WYSIWYG Editor benchmark" href="/benchmarks/analysis.php">faster</a> than existing technologies and offers <a title="WYSIWYG Editor demos" href="/demos/css3/">unprecedented WYSIWYG functionalities</a>.
 				</p>
-				
-				<p><a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank"><img class="size-medium alignleft" style="border: 0px;" title="jQuery_banner_297x372-1" src="http://aloha-editor.org/blog/wp-content/uploads/2012/10/jQuery_banner_297x372-1-239x300.png" alt="jQuery conference 2013" width="239" height="300"></a></p>
+
+<!--
+				<p><a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank"><img class="size-medium alignleft" style="border: 0px;" title="jQuery EU 2013 banner" src="http://aloha-editor.org/blog/wp-content/uploads/2012/10/jQuery_banner_297x372-1-239x300.png" alt="jQuery EU 2013" width="239" height="300"></a></p>
 				<p class="smallinfo">We are very proud that we were asked to organize the next <a title="jQuery conf 2013 Vienna / EU hosted by Gentics"  href="http://events.jquery.org/2013/eu/">jQuery conference in the middle of Europe</a> in Vienna.
 				</p>
 
@@ -40,7 +41,10 @@
 					This two day conference offers a platform for knowledge transfer on the latest web technologies for all of those interested in Javascript.<br />
 				Numerous internationally renowned speakers await the guests and will tell about the latest trends in web, apps and smart TV development with jQuery as well as provide further insights into the future of IT.</p>
 
-				<p class="smallinfo">Members of the Aloha Editor core team will also be participating and Haymo Meran, Aloha Editor project leader, is one of the speakers.<br />
+				<p class="smallinfo">Members of the Aloha Editor core team will also be participating and Haymo Meran, Aloha Editor project leader, is one of the speakers.<br /></p>
+				
+-->
+
 				</div>
 				<br />
 
@@ -51,7 +55,13 @@
 			<div class="grid_6 base">
 
 <div class="clickteaser" style="height:290px;text-align: center;padding:15px;margin-bottom:10px" onclick="window.location.href='/about.php#html5';">
+	
+	<a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank"><img style="border: 0px;" title="jQuery EU 2013 banner" src="http://aloha-editor.org/blog/wp-content/uploads/2012/10/jQuery_banner_297x372-1-239x300.png" alt="jQuery EU 2013" height="280px"></a>
+	
+	<!--
 	<img alt="Aloha HTML5 WYSIWYG Editor logo" src="/logo/Aloha%20Editor%20HTML5%20sticker%20transparent%20256.png" style="width:256px"><br />
+	-->
+
 	<div style="position:relative;top:-40px;margin:auto;">
 <!--
 <a title="All about the Aloha HTML5 WYSIWYG Editor" href="about.php#html5">Read about HTML5</a>.<br /><a title="Aloha HTML5 WYSIWYG EDitor logos." href="logos.php">Download a logo</a>.<br /><a title="Aloha HTML5 WYSIWYG Editor T-shirts" href="http://aloha-editor.spreadshirt.at/" target="_blank">Aloha Editor - T-Shirt</a>.
