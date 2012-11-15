@@ -13,7 +13,7 @@ Aloha.ready(function() {
 			.css('z-index', 999999)
 			// float to the text above
 			.animate({
-				top:  -250,
+				top:  -300,
 				left: -40
 			}, 900)
 			// click the text
@@ -55,8 +55,8 @@ Aloha.ready(function() {
 			})
 			// fly towards the B-button
 			.animate({
-				top: -375,
-				left: -210
+				top: -420, 
+				left: -200
 			}, 1000)
 			// click bold
 			.animate({

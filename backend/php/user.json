@@ -1,0 +1,26 @@
+[
+	{
+	    "@context": "http://aloha-editor.org/person",
+	    "@id": "rene.kapusta@gmail.com",
+	    "name": "Rene Kapusta",
+	    "role": "admin"
+	},
+	{
+	    "@context": "http://aloha-editor.org/person",
+	    "@id": "h.meran@gentics.com",
+	    "name": "Haymo Meran",
+	    "role": "admin"
+	},
+	{
+	    "@context": "http://aloha-editor.org/person",
+	    "@id": "m.aghamanoukjan@gentics.com",
+	    "name": "Manuel Aghamanoukjan",
+	    "role": "admin"
+	},
+	{
+	    "@context": "http://aloha-editor.org/person",
+	    "@id": "c.prerovsky@gentics.com",
+	    "name": "Clemens Prerovsky",
+	    "role": "admin"
+	}
+]

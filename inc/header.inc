@@ -65,6 +65,7 @@ $path = '/';
 			                        common/highlighteditables,
 			                        common/block,
 			                        common/undo,
+			                        common/image,
 			                        common/contenthandler,
 			                        common/paste,
 			                        common/characterpicker,
