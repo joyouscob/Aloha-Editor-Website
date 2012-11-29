@@ -9,7 +9,7 @@
 		
 		<div id="teaser" class="container_20">
 			<div class="grid_20">
-				<h1>Supported Browser Version for Aloha Editor</h1>
+				<h1>Supported Browser Versions for Aloha Editor</h1>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -23,7 +23,7 @@
 						<li>Safari 5, 6</li>
 					</ul>
 					<br />
-					<p class="smallinfo">We are reserving the right to cancel support for a certain browser versions at any given time without prior notice.</p>
+					<p class="smallinfo">We reserve the right to cancel support for a certain browser version at any given time without prior notice.</p>
 					<br />
 					<p class="smallinfo">November 2012</p>
 				</div>
