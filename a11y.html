@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<title>A11y Contenteditable</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="alacarte/src/demo/ui-a-la-carte/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="alacarte/src/demo/ui-a-la-carte/css/bootstrap-responsive.min.css" type="text/css">
+<link rel="stylesheet" href="alacarte/src/plugins/common/ui-a-la-carte/css/ui-a-la-carte.css" type="text/css">
+<style>
+bold { font-weight: bold; }
+</style>
+</head>
+<body>
+<div id="toolbar">
+
+<div id="menu" role="application" aria-label="Aloha Editor">
+<ul class="nav nav-tabs" role="menu" aria-label="Content edit menu" multiselectable="false" tabindex="0" activedescendant="format-tab">
+<li class="active"><a id="format-tab"href="#format" data-toggle="tab" role="menuitem" aria-haspopup="true" aria-owns="format" aria-state="expanded">Format</a></li>
+<li><a id="insert-tab" href="#insert" data-toggle="tab" role="menuitem" aria-has-popup="true" aria-ows="insert">Insert</a></li>
+<li class="not-in-scope"><a id="link-tab" href="#link" data-toggle="tab" role="menuitem" aria-disabled="true">Link</a></li>
+<li class="not-in-scope"><a id="table-tab"href="#table" data-toggle="tab" role="menuitem" aria-disabled="true">Table</a></li>
+</ul>
+</div><!--/menu-->
+
+<div id="toolbar-components" class="tab-content">
+<div class="tab-pane active" id="format"> 
+<div class="btn-group" role="menubar" aria-label="Format toolbar tab">
+	<button class="btn" id="aloha-component-strong" title="Make selection bold" role="button" aria-pressed="false" aria-controls="content1" aria-label="bold"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-emphasis" role="button" aria-label="emphasis"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-underline" role="button" aria-label="underline"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-strikethrough" role="button" aria-label="strike through"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-subscript" role="button" aria-label="sub script"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-superscript" role="button" aria-label="super script"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-quote" role="button" aria-label="quote"><span class="aloha-icon"></span></button>
+</div>
+<div class="btn-group">
+	<button class="btn" id="aloha-component-ordered-list" role="button" aria-label="ordered list"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-unordered-list" role="button" aria-label="unordered list"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-indent-list" disabled="disabled" role="button" aria-label="indent list"><span class="aloha-icon"></span></button>
+	<button class="btn" id="aloha-component-outdent-list" disabled="disabled" role="button" aria-label="outdent list"><span class="aloha-icon"></span></button>
+</div>
+
+<div id="aloha-component-format-block" class="btn-group dropdown">
+  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="dropdown-text">Paragraph</span>
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+	<li><a class="aloha-component-h" id="aloha-component-h1" href="#">Heading 1</a></li>
+	<li><a class="aloha-component-h" id="aloha-component-h2" href="#">Heading 2</a></li>
+	<li><a class="aloha-component-h" id="aloha-component-h3" href="#">Heading 3</a></li>
+	<li><a class="aloha-component-h" id="aloha-component-h4" href="#">Heading 4</a></li>
+	<li><a class="aloha-component-h" id="aloha-component-h5" href="#">Heading 5</a></li>
+	<li><a class="aloha-component-h" id="aloha-component-h6" href="#">Heading 6</a></li>
+	<li><a id="aloha-component-p" href="#">Paragraph</a></li>
+	<li><a id="aloha-component-pre" href="#">Preformatted</a></li>
+	<li><a id="aloha-component-blockquote" href="#">Blockquote</a></li>
+	<li><a id="aloha-component-remove-format" href="#">Remove format</a></li>
+  </ul>
+</div>
+</div> <!--/tab-pane #format-->
+
+<div class="tab-pane" id="insert">
+<div class="btn-group" role="menubar" aria-label="Insert toolbar tab">
+	<button class="btn" id="aloha-component-insert-link" role="button" aria-label="insert link"><span class="aloha-icon"></span></button>
+</div>
+</div>
+
+<div class="tab-pane" id="link">
+<div class="btn-group">
+	<button class="btn" id="aloha-component-remove-link" disabled="disabled"><span class="aloha-icon"></span></button>
+	<input type="text" id="aloha-component-edit-link" disabled="disabled" />
+</div>
+</div>
+
+<div class="tab-pane" id="table">
+</div>
+
+</div> <!--/toolbar-components-->
+</div> <!--/toolbar-->
+
+<div role="application" aria-label="edit heading">
+<h1 id="heading" role="textbox" aria-label="aloha h1" aria-readonly="false">Test accessibility</h1>
+</div>
+
+<div role="application" aria-label="edit content 1">
+<div id="content1" role="textbox" aria-multiline="true" aria-label="edit content 1" aria-readonly="false">
+
+<p>
+This is the first paragraph of the first editable.
+
+<p>
+This is the second paragraph and some <strong aria-label="bolded">bold text with aria-label="bolded"</strong>.
+
+</div>
+</div>
+
+<div role="application" aria-label="edit content 2">
+<div id="content2" role="textbox" aria-multiline="true" aria-label="edit content 2" aria-readonly="false">
+
+<p>
+This is the first paragraph of the second editable.
+
+<p>
+This is the second paragraph and some <strong>bold text</strong>.
+
+</div>
+</div>
+
+<div>
+<h2>More Info</h2>
+<h3>JAWS</h3>
+<p>
+Contenteditable divs don't work well with JAWS. There is a bug that
+sometimes announces the letter before and sometimes the letter after
+the cursor, and when switching lines it sometimes announces the line
+switched from and sometimes the line switched to. With role="textbox"
+this bug doesn't occur.
+<p>
+<h3>NVDA</h3>
+<p>
+To make contenteditable divs work with NVDA, the role="application" is
+necessary.
+</div>
+<h3>VoiceOver</h3>
+<p>
+VoiceOver works with contenteditable divs, but needs the
+role="textbox", otherwise keystrokes will not be announced.
+<script src="alacarte/src/lib/vendor/jquery-1.7.2.js"></script>
+<script src="alacarte/src/demo/ui-a-la-carte/js/bootstrap.min.js"></script>
+<script src="alacarte/src/lib/require.js"></script>
+<script>
+Aloha = {};
+Aloha.settings = {};
+Aloha.settings.jQuery = jQuery;
+Aloha.settings.plugins = { format: { config: ['strong', 'em', 'sub', 'sup', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'removeFormat'] }};
+Aloha.settings.requireConfig =
+		{
+			paths: {
+				'ui/ui-plugin': '../plugins/common/ui-a-la-carte/lib/ui-plugin',
+				'ui/component': '../plugins/common/ui-a-la-carte/lib/component',
+				'ui/button'   : '../plugins/common/ui-a-la-carte/lib/button',
+				'ui/toggleButton'   : '../plugins/common/ui-a-la-carte/lib/toggleButton',
+				'ui/port-helper-attribute-field': '../plugins/common/ui-a-la-carte/lib/port-helper-attribute-field',
+				'ui/port-helper-multi-split': '../plugins/common/ui-a-la-carte/lib/port-helper-multi-split',
+				'ui/original-component': '../plugins/common/ui/lib/component',
+				'ui/original-port-helper-attribute-field': '../plugins/common/ui/lib/port-helper-attribute-field',
+				'ui/original-port-helper-multi-split': '../plugins/common/ui/lib/port-helper-multi-split',
+				'ui/original-button': '../plugins/common/ui/lib/button',
+				'ui/original-toggleButton': '../plugins/common/ui/lib/toggleButton'
+			}
+		};
+</script>
+<script src="alacarte/src/lib/aloha.js" data-aloha-plugins="common/ui,common/format,common/list,common/link,common/table"></script>
+<script>
+Aloha.ready(function () {
+   $('#heading').aloha();
+   $('#content1').aloha();
+   $('#content2').aloha();
+   $('#content3').aloha();
+});
+</script>
+</body>
+</html>

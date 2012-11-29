@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PERFORM_QUERY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_STRING" type="xs:string" minOccurs="0" />
+				<xs:element name="SUCHART" type="ENUM_SUCHART"/>
+				<xs:element name="WORTSTAMMSUCHE" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="TAGCLOUD" type="TAGCLOUD" minOccurs="0"/>
+				<xs:element name="PERSONEN" type="PERSONEN" minOccurs="0"/>
+				<xs:element name="ORTE" type="ORTE" minOccurs="0"/>
+				<xs:element name="FARBE" type="ENUM_FARBE" minOccurs="0"/>
+				<xs:element name="KATEGORIE" type="ENUM_KATEGORIEN" minOccurs="0"/>
+				<xs:element name="QUELLEN" type="QUELLEN" minOccurs="0"/>
+				<xs:element name="FORMAT" type="ENUM_FORMAT" minOccurs="0"/>
+				<xs:element name="MODEL_RELEASE" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="PORTRAITS" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="EDITORS_CHOICE" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="INFOGRAFIK" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="ILLUSTRATION" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="LIZENZ_PREIS_ART" type="LIZENZ_PREIS_ART" minOccurs="0"/>
+				<xs:element name="DATUM_VON" type="xs:date" minOccurs="0"/>
+				<xs:element name="DATUM_BIS" type="xs:date" minOccurs="0"/>
+				<xs:element name="NUTZUNGSLAND" type="xs:string" minOccurs="0"/>
+				<xs:element name="HEIKLE_BILDER" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="FILTER" type="xs:string" minOccurs="0"/>
+				<xs:element name="AUSGEFILTERTE_LIEFERN" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="GELOESCHTE_LIEFERN" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="SORTIERREIHENFOLGE" type="ENUM_SORTIERREIHENFOLGE"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string"/>
+				<xs:element name="SUBSITE" type="ENUM_SUBSITE" minOccurs="0"/>
+				<xs:element name="SCOPE_OF_SEARCH" type="ENUM_SCOPE_OF_SEARCH" minOccurs="0"/>
+				<xs:element name="SEARCH_OPTIONS" type="SEARCH_OPTIONS" minOccurs="0"/>
+				<xs:element name="SPACE_OF_TIME" type="ENUM_SPACE_OF_TIME" minOccurs="0"/>
+				<xs:element name="FACETTE_DATUM" type="FACETTE_DATUM_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_PEOPLE" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_EREIGNIS" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_ORT" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_KEYWORDS" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_TECHNISCHES" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_THEMENBEREICH" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_FARBE" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_FOTOGRAF" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_AGENTUR" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FACETTE_RECHTE" type="FACETTE_BEGRIFFE_REQ" minOccurs="0"/>
+				<xs:element name="FELDWERTE" type="REQ_FELDWERTE"/>
+				<xs:element name="TREFFER_VON" type="xs:integer"/>
+				<xs:element name="TREFFER_BIS" type="xs:integer"/>
+				<xs:element name="PRE_CLUSTER" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="USER_IP" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PERFORM_QUERY_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_ID" type="xs:string"/>
+				<xs:element name="FELDWERTE" type="RET_FELDWERTE"/>
+				<xs:element name="HITS" type="xs:integer"/>
+				<xs:element name="MAX_HITS" type="xs:integer"/>
+
+				<xs:element name="FACETTE_DATUM" type="FACETTE_DATUM_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_PEOPLE" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_EREIGNIS" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_ORT" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_KEYWORDS" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_TECHNISCHES" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_THEMENBEREICH" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_FARBE" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_FOTOGRAF" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_AGENTUR" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+				<xs:element name="FACETTE_RECHTE" type="FACETTE_BEGRIFFE_RET" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_CLUSTERING_RESULTS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_ID" type="xs:string"/>
+				<xs:element name="CLUSTERING_VALUES" type="ENUM_CLUSTERING_VALUES"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_CLUSTERING_RESULTS_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TAGCLOUD" type="RET_TAGCLOUD" minOccurs="0"/>
+				<xs:element name="PERSONEN" type="RET_PERSONEN" minOccurs="0"/>
+				<xs:element name="ORTE" type="RET_ORTE" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NAVIGATE_QUERY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_ID" type="xs:string"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string"/>
+				<xs:element name="TREFFER_VON" type="xs:integer"/>
+				<xs:element name="TREFFER_BIS" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NAVIGATE_QUERY_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FELDWERTE" type="RET_FELDWERTE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_METADATA">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BILD_ID" type="xs:string"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string"/>
+				<xs:element name="FELDWERTE" type="REQ_FELDWERTE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_METADATA_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FELDWERTE" type="RET_FELDWERTE_SINGLE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_ATTACHMENT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BILD_ID" type="xs:string"/>
+				<xs:element name="ATTACHMENTART" type="ENUM_ATTACHMENTART"/>
+				<xs:element name="BILDGROESSE" type="ENUM_BILDGROESSE" minOccurs="0"/>
+				<xs:element name="WASSERZEICHEN" type="xs:boolean"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string" minOccurs="0"/>
+				<xs:element name="WIDTH" type="xs:integer" minOccurs="0"/>
+				<xs:element name="HEIGHT" type="xs:integer" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- GET_ATTACHMENT liefert das Binary in der HTTP Response -->
+	<xs:element name="PERFORM_RBZ_QUERY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_STRING" type="xs:string" minOccurs="0"/>
+				<xs:element name="RBZ_SUCHART" type="ENUM_RBZ_SUCHART"/>
+				<xs:element name="WORTSTAMMSUCHE" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="TAGCLOUD" type="TAGCLOUD" minOccurs="0"/>
+				<xs:element name="KATEGORIE" type="ENUM_KATEGORIEN" minOccurs="0"/>
+				<xs:element name="DATUM_VON" type="xs:dateTime" minOccurs="0"/>
+				<xs:element name="DATUM_BIS" type="xs:dateTime" minOccurs="0"/>
+				<xs:element name="SORTIERREIHENFOLGE" type="ENUM_RBZ_SORTIERREIHENFOLGE"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string"/>
+				<xs:element name="FELDWERTE" type="REQ_FELDWERTE"/>
+				<xs:element name="TREFFER_VON" type="xs:integer"/>
+				<xs:element name="TREFFER_BIS" type="xs:integer"/>
+				<xs:element name="PRE_CLUSTER" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="USER_IP" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PERFORM_RBZ_QUERY_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_ID" type="xs:string"/>
+				<xs:element name="FELDWERTE" type="RET_FELDWERTE"/>
+				<xs:element name="HITS" type="xs:integer"/>
+				<xs:element name="MAX_HITS" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_RBZ_CLUSTERING">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_ID" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_RBZ_CLUSTERING_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TAGCLOUD" type="RET_TAGCLOUD" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NAVIGATE_RBZ_QUERY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QUERY_ID" type="xs:string"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string"/>
+				<xs:element name="TREFFER_VON" type="xs:integer"/>
+				<xs:element name="TREFFER_BIS" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NAVIGATE_RBZ_QUERY_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FELDWERTE" type="RET_FELDWERTE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_RBZ_METADATA">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RBZ_ID" type="xs:string"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string"/>
+				<xs:element name="FELDWERTE" type="REQ_FELDWERTE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_RBZ_METADATA_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FELDWERTE" type="RET_FELDWERTE_SINGLE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GET_RBZ_ATTACHMENT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RBZ_ID" type="xs:string"/>
+				<xs:element name="WIDTH" type="xs:integer"/>
+				<xs:element name="HEIGHT" type="xs:integer"/>
+				<xs:element name="ZUSCHNEIDEN" type="xs:boolean"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- GET_RBZ_ATTACHMENT liefert das Binary in der HTTP Response -->
+	<xs:element name="TRANSLATE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TAGCLOUD" type="REQ_TRANSLATE" minOccurs="0"/>
+				<xs:element name="ORTE" type="REQ_TRANSLATE" minOccurs="0"/>
+				<xs:element name="WUNSCHSPRACHE" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TRANSLATE_RETURN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TAGCLOUD" type="RET_TRANSLATE" minOccurs="0"/>
+				<xs:element name="ORTE" type="RET_TRANSLATE" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="REQ_TRANSLATE">
+		<xs:sequence>
+			<xs:element name="ORIGINAL" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_TRANSLATE">
+		<xs:sequence>
+			<xs:element name="TRANSLATION" type="RET_TRANSLATE_TRANSLATION" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_TRANSLATE_TRANSLATION">
+		<xs:sequence>
+			<xs:element name="ORIGINAL" type="xs:string"/>
+			<xs:element name="ANZEIGETEXT" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ORTE">
+		<xs:sequence>
+			<xs:element name="ORT" type="ORT" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ORT">
+		<xs:sequence>
+			<xs:element name="TEXT" type="xs:string"/>
+			<xs:element name="ORIGINAL" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PERSONEN">
+		<xs:sequence>
+			<xs:element name="PERSON" type="PERSON" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PERSON">
+		<xs:sequence>
+			<xs:element name="NAME" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="REQ_FELDWERTE">
+		<xs:sequence>
+			<xs:element name="FELDNAME" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_FELDWERTE">
+		<xs:sequence>
+			<xs:element name="TREFFER" type="TREFFER" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_FELDWERTE_SINGLE">
+		<xs:sequence>
+			<xs:element name="TREFFER" type="TREFFER" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TREFFER">
+		<xs:sequence>
+			<xs:element name="FELDWERT" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="feldname" type="xs:string" use="required"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="pos" type="xs:integer" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="SEARCH_OPTIONS">
+		<xs:sequence>
+			<xs:element name="SEARCH_OPTION" type="ENUM_SEARCH_OPTION" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_DATUM_REQ">
+		<xs:sequence>
+			<xs:element name="DEKADE" type="FACETTE_DATUM_REQ_TYPE" />
+			<xs:element name="JAHR" type="FACETTE_DATUM_REQ_TYPE" minOccurs="0"/>
+			<xs:element name="MONAT" type="FACETTE_DATUM_REQ_TYPE" minOccurs="0"/>
+			<xs:element name="TAG" type="FACETTE_DATUM_REQ_TYPE" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_DATUM_REQ_TYPE">
+		<xs:sequence>
+			<xs:element name="WERT" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_DATUM_RET">
+		<xs:sequence>
+			<xs:element name="DEKADE" type="FACETTE_DATUM_RET_TYPE" maxOccurs="unbounded"/>
+			<xs:element name="JAHR" type="FACETTE_DATUM_RET_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="MONAT" type="FACETTE_DATUM_RET_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TAG" type="FACETTE_DATUM_RET_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_DATUM_RET_TYPE">
+		<xs:sequence>
+			<xs:element name="WERT" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+			<xs:element name="FREQ" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_BEGRIFFE_REQ">
+		<xs:sequence>
+			<xs:element name="BEGRIFF" type="FACETTE_BEGRIFF_REQ" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_BEGRIFF_REQ">
+		<xs:sequence>
+			<xs:element name="ORIGINAL" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_BEGRIFFE_RET">
+		<xs:sequence>
+			<xs:element name="BEGRIFF" type="FACETTE_BEGRIFF_RET" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FACETTE_BEGRIFF_RET">
+		<xs:sequence>
+			<xs:element name="ANZEIGETEXT" type="xs:string"/>
+			<xs:element name="ORIGINAL" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+			<xs:element name="FREQ" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TAGCLOUD">
+		<xs:sequence>
+			<xs:element name="BEGRIFF" type="TAGCLOUD_BEGRIFF" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TAGCLOUD_BEGRIFF">
+		<xs:sequence>
+			<xs:element name="ANZEIGETEXT" type="xs:string"/>
+			<xs:element name="ORIGINAL" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QUELLEN">
+		<xs:sequence>
+			<xs:element name="QUELLE" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LIZENZ_PREIS_ART">
+		<xs:sequence>
+			<xs:element name="TYPE" type="ENUM_BILDART" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_TAGCLOUD">
+		<xs:sequence>
+			<xs:element name="BEGRIFF" type="RET_TAGCLOUD_BEGRIFF" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_TAGCLOUD_BEGRIFF">
+		<xs:sequence>
+			<xs:element name="ANZEIGETEXT" type="xs:string"/>
+			<xs:element name="ORIGINAL" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+			<xs:element name="COUNT" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_PERSONEN">
+		<xs:sequence>
+			<xs:element name="PERSON" type="RET_PERSON" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_PERSON">
+		<xs:sequence>
+			<xs:element name="NAME" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+			<xs:element name="COUNT" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_ORTE">
+		<xs:sequence>
+			<xs:element name="ORT" type="RET_ORT" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RET_ORT">
+		<xs:sequence>
+			<xs:element name="ANZEIGETEXT" type="xs:string"/>
+			<xs:element name="ORIGINAL" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+			<xs:element name="COUNT" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ENUM_SUCHART">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GOOGLE_SYNTAX"/>
+			<xs:enumeration value="AEHNLICHE_BILDINHALTE"/>
+			<xs:enumeration value="AEHNLICHE_BILDBESCHREIBUNGEN"/>
+			<xs:enumeration value="BILD_IDS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_SORTIERREIHENFOLGE">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CHRONOLOGISCH_NEUESTE_ZUERST"/>
+			<xs:enumeration value="CHRONOLOGISCH_NEUESTE_ZUERST_UND_NACH_GRUPPEN"/>
+			<xs:enumeration value="CHRONOLOGISCH_AELTESTE_ZUERST"/>
+			<xs:enumeration value="RELEVANZ"/>
+			<xs:enumeration value="RELEVANZ_UND_GRUPPEN"/>
+			<xs:enumeration value="WIE_BILDIDS"/>
+			<xs:enumeration value="BILDMERKMALE"/>
+			<xs:enumeration value="TREFFERLISTE_AEHNLICHKEITSSUCHE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_RBZ_SORTIERREIHENFOLGE">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NACH_PRIORITAET"/>
+			<xs:enumeration value="CHRONOLOGISCH_NEUESTE_ZUERST"/>
+			<xs:enumeration value="CHRONOLOGISCH_AELTESTE_ZUERST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_FARBE">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SCHWARZ"/>
+			<xs:enumeration value="BLAU"/>
+			<xs:enumeration value="BRAUN"/>
+			<xs:enumeration value="GRUEN"/>
+			<xs:enumeration value="GRAU"/>
+			<xs:enumeration value="ORANGE"/>
+			<xs:enumeration value="PINK"/>
+			<xs:enumeration value="VIOLETT"/>
+			<xs:enumeration value="ROT"/>
+			<xs:enumeration value="WEISS"/>
+			<xs:enumeration value="GELB"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_BILDART">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="RM"/>
+			<xs:enumeration value="RF"/>
+			<xs:enumeration value="EXKL"/>
+			<xs:enumeration value="OTS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_KATEGORIEN">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CREATIVE"/>
+			<xs:enumeration value="NEWS"/>
+			<xs:enumeration value="SPORT"/>
+			<xs:enumeration value="LEUTE"/>
+			<xs:enumeration value="BUNTES"/>
+			<xs:enumeration value="GESCHICHTE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_ATTACHMENTART">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HIRES"/>
+			<xs:enumeration value="PREVIEW"/>
+			<xs:enumeration value="THUMBNAIL"/>
+			<xs:enumeration value="SOURCE"/>
+			<xs:enumeration value="VIDEO"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_BILDGROESSE">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="KLEIN"/>
+			<xs:enumeration value="MITTEL"/>
+			<xs:enumeration value="GROSS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_RBZ_SUCHART">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="QUERY_STRING"/>
+			<xs:enumeration value="RBZ_ZU_PFAD"/>
+			<xs:enumeration value="KINDER_ZU_RBZ"/>
+			<xs:enumeration value="KINDESKINDER_ZU_RBZ"/>
+			<xs:enumeration value="METADATEN_ZU_ID_LISTE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_CLUSTERING_VALUES">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="TAGCLOUD"/>
+			<xs:enumeration value="PERSONEN"/>
+			<xs:enumeration value="ORTE"/>
+			<xs:enumeration value="ALL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_FORMAT">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HOCH"/>
+			<xs:enumeration value="QUER"/>
+			<xs:enumeration value="QUADRAT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_SUBSITE">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HOME"/>
+			<xs:enumeration value="CREATIVE"/>
+			<xs:enumeration value="EDITORIAL"/>
+			<xs:enumeration value="NEWS"/>
+			<xs:enumeration value="ARCHIVE"/>
+			<xs:enumeration value="REPORTAGE"/>
+			<xs:enumeration value="SPORT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_SCOPE_OF_SEARCH">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ALL"/>
+			<xs:enumeration value="CREATIVE"/>
+			<xs:enumeration value="EDITORIAL"/>
+			<xs:enumeration value="ARCHIVE"/>
+			<xs:enumeration value="REPORTAGE"/>
+			<xs:enumeration value="SPORT"/>
+			<xs:enumeration value="NEWS"/>
+			<xs:enumeration value="THEMENBILDER"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_SEARCH_OPTION">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="RIGHTS_MANAGED"/>
+			<xs:enumeration value="ROYALTY_FREE"/>
+			<xs:enumeration value="MODEL_RELEASED"/>
+			<xs:enumeration value="OHNE_COPYRIGHTPFLICHTIG"/>
+			<xs:enumeration value="OHNE_SPORT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ENUM_SPACE_OF_TIME">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ANYTIME"/>
+			<xs:enumeration value="TODAY"/>
+			<xs:enumeration value="FROM_YESTERDAY"/>
+			<xs:enumeration value="THIS_WEEK"/>
+			<xs:enumeration value="THIS_MONTH"/>
+			<xs:enumeration value="THIS_YEAR"/>
+			<xs:enumeration value="LAST_10_DAYS"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
