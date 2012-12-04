@@ -39,18 +39,18 @@
 				<br />
 				<br />
 
-<h2>Who is already using Aloha Editor?</h2>
+<h2>Aloha Editor is available for:</h2>
 
 <p class="references" style="text-align:center; vertical-align: middle;">
-	<a href="http://gentics.com" rel="nofollow"><img src="/images/product/GenticsCN.png"/></a>
-	<a href="http://wordpress.org" rel="nofollow"><img src="/images/product/WordPress.png"/></a> 
-	<a href="http://drupal.org" rel="nofollow"><img src="/images/product/Drupal.png"/></a> 
-	<a href="http://typo3.org" rel="nofollow"><img src="/images/product/Typo3.png"/></a> 
+	<a href="http://gentics.com" title="Gentics Content.Node" rel="nofollow"><img src="/images/product/GenticsCN.png"/></a>
+	<a href="http://wordpress.org" title="WordPress" rel="nofollow"><img src="/images/product/WordPress.png"/></a> 
+	<a href="http://drupal.org" title="Drupal" rel="nofollow"><img src="/images/product/Drupal.png"/></a> 
+	<a href="http://typo3.org" title="Typo3" rel="nofollow"><img src="/images/product/Typo3.png"/></a> 
 	<br />
-	<a href="http://ektron.com" rel="nofollow"><img src="/images/product/ektron.png"/></a> 
-	<a href="http://createjs.org" rel="nofollow"><img src="/images/product/CreateJS.png"/></a> 
-	<a href="http://meteor.com" rel="nofollow"><img src="/images/product/meteorjs.png"/></a> 
-	<a href="http://oerpub.org" rel="nofollow"><img src="/images/product/oerpub.png"/></a> 
+	<a href="http://ektron.com" title="ektron" rel="nofollow"><img src="/images/product/ektron.png"/></a> 
+	<a href="http://createjs.org" title="Create" rel="nofollow"><img src="/images/product/CreateJS.png"/></a> 
+	<a href="http://meteor.com" title="Meteor JS" rel="nofollow"><img src="/images/product/meteorjs.png"/></a> 
+	<a href="http://oerpub.org" title="OERPub" rel="nofollow"><img src="/images/product/oerpub.png"/></a> 
 </p>
 
 			</div>
