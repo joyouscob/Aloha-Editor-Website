@@ -8,14 +8,19 @@ $_SESSION['n2'] = rand(1,20);
 $_SESSION['expect'] = $_SESSION['n1']+$_SESSION['n2'];
 
 $str='';
-if($_SESSION['errStr'])
+
+if (empty($css)) {
+	$css = '';
+}
+
+if(!empty($_SESSION['errStr']))
 {
 	$str='<div class="error">'.$_SESSION['errStr'].'</div>';
 	unset($_SESSION['errStr']);
 }
 
 $success='';
-if($_SESSION['sent'])
+if(!empty($_SESSION['sent']))
 {
 	//$success='<h1>Thank you!</h1><br />We\'ll reply as soon as possible.<br /><br />Your Aloha Editor team.';
 	$success='<h1>Thank you!</h1><br />We\'ll reply as soon as possible. You\'ll receive an automatic reply-mail sent by our ticketsystem.<br /><br />Your Aloha Editor team.';
@@ -24,6 +29,21 @@ if($_SESSION['sent'])
 	
 	unset($_SESSION['sent']);
 }
+
+if (empty($_SESSION['post'])) {
+	$_SESSION['post'] = array();
+}
+
+if (empty($_SESSION['post']['name'])) {
+	$_SESSION['post']['name'] = '';
+}
+if (empty($_SESSION['post']['email'])) {
+	$_SESSION['post']['email'] = '';
+}
+if (empty($_SESSION['post']['message'])) {
+	$_SESSION['post']['message'] = '';
+}
+
 
 include('inc/header.inc'); 
 
