@@ -270,6 +270,15 @@
 				</p>
 
 
+				<p style="clear:both">
+					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("robert@tiki.org")));?>.jpg" style="float:left; padding:5px" />
+					<a href="http://visop-dev.com">Robert Plummer</a><br />
+					<!-- http://github.com/RobertLeePlummerJr -->
+					Web developer<br />
+					<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
+				</p>
+
+
 				<h3>Thanks to</h3>
 				<p><a href="http://drewwilson.com">Drew Wilson</a><br/>
 				jQuery autosuggest (collaboration)</p>
