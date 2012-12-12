@@ -56,7 +56,7 @@
 			</div>
 			
 			<div class="grid_1">
-				<img src="/images/join_us.png" alt="Join Aloha HTML5 WYSIWYG Editor" style="width: 250px; position:relative; left: 65px; top: -80px; float:right; cursor:pointer; z-index: 100000;" onclick="window.location.href='/join_us.php'" />
+				<img src="/images/join_us.png" alt="Join Aloha HTML5 WYSIWYG Editor" style="width: 180px; position:relative; left: 25px; top: -60px; float:right; cursor:pointer; z-index: 100000; padding-bottom: 30px" onclick="window.location.href='/join_us.php'" />
 			</div>
 			
 			
