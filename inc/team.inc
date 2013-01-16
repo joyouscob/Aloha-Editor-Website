@@ -279,6 +279,24 @@
 				</p>
 
 
+				<p style="clear:both">
+					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("rico.bl@gmail.com")));?>.jpg" style="float:left; padding:5px" />
+					<a href="http://ricobl.wordpress.com">Enrico Batista da Luz</a><br />
+					<!-- http://github.com/ricobl -->
+					Web developer<br />
+					<img alt="" src="<?=$path?>flags/br.gif" style="padding-right:5px" />Brazil
+				</p>
+
+
+				<p style="clear:both">
+					<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("hallock@gmail.com")));?>.jpg" style="float:left; padding:5px" />
+					<a href="http://thomashallock.com">Thomas Hallock</a><br />
+					<!-- http://github.com/antialias -->
+					Web developer<br />
+					<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
+				</p>
+
+
 				<h3>Thanks to</h3>
 				<p><a href="http://drewwilson.com">Drew Wilson</a><br/>
 				jQuery autosuggest (collaboration)</p>

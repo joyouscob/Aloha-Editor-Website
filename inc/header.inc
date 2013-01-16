@@ -8,7 +8,8 @@
 	<meta name="google-site-verification" content="wF_Dg1xnxqgKrWdKF5nvw8khg5XsnRd7xHCkz8dHHw8" />
 	
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	
 	<meta name="keywords" content="HTML5, HTML5 Editor, WYSIWYG, Editor, WYSIWYG Editor, RTE, Richtext, Richtext Editor" />
 	<meta name="description" content="World's most advanced HTML5 WYSIWYG Editor gives you a total new experience when editing. It's faster than existing WYSIWYG technologies and offers unprecedented WYSIWYG functionalities."/>
 
@@ -20,7 +21,9 @@
 if (file_exists('./inc/version.inc')) {
 	require_once './inc/version.inc';
 }
+
 $path = '/';
+
 ?>
 
 <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.2.js"></script>

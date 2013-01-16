@@ -15,6 +15,7 @@ Author: Zachary Johnson (http://www.zachstronaut.com)
 <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
 
 <link href="<?=$alohaeditor_cdn?>css/aloha.css" type="text/css" rel="stylesheet" />
+
 <script>
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 	// no settings for this demo

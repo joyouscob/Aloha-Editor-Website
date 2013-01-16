@@ -10,7 +10,6 @@ profile="http://gmpg.org/xfn/11">
 <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/vendor/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="<?=$alohaeditor_cdn?>lib/require.js"></script>
 
-
 <script>
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 	
