@@ -52,7 +52,7 @@
 				<p>Find out more about how to <a href="/license.php">license Aloha Editor</a> ...</p>
 
 				<h2>How to get in contact?</h2>
-				<p>Visit our <a href="https://github.com/alohaeditor/Aloha-Editor" target="_blank">coder-community</a>, join <a href="http://getsatisfaction.com/aloha_editor" target="_blank">the discussion</a> or <a href="<?=$path?>contact.php">contact us</a>.</p>
+				<p>Visit our <a href="https://github.com/alohaeditor/Aloha-Editor" target="_blank">coder-community</a>, join <a href="https://github.com/alohaeditor/Aloha-Editor/issues" target="_blank">the discussion</a> or <a href="<?=$path?>contact.php">contact us</a>.</p>
 
 <? include('inc/translation.inc'); ?>
 				

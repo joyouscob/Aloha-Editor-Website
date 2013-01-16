@@ -16,7 +16,7 @@
 					<li><a href="/blog/" title="Aloha Editor Blog">Blog</a></li>
 					<li><a href="https://github.com/alohaeditor/Aloha-Editor/wiki" title="Aloha Editor Developer Wiki :)">Wiki</a></li>
 					<li><a href="https://github.com/alohaeditor/Aloha-Editor/issues" title="Our issue tracker">Issue</a></li>
-					<!-- li><a href="http://getsatisfaction.com/aloha_editor" title="Get help or help others">Forum</a></li>
+					<!-- li><a href="https://github.com/alohaeditor/Aloha-Editor/issues" title="Get help or help others">Forum</a></li>
 					<li><a href="https://github.com/alohaeditor/Aloha-Editor/issues" title="Our issue tracker">Issues</a></li -->
 					<!-- li><a href="/api" title="a must for developers">API</a></li -->
 				</ul>

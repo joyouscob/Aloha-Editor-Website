@@ -138,13 +138,13 @@
 
 			<div class="container_20" style="padding-top:50px">
 				<div class="grid_14">
-					<h3>Save 25% of working time!</h3>
+					<h3>Save 25 % of working time!</h3>
 					<p><img src="images/save-alert.png" alt="save 25%" title="save 25%" class="left" style="width:100px"/>Aloha Editor
 					is designed to make your editing process faster.
 					Each single editing step has been improved.
 					First we reduced the number of steps it takes to get your daily work done.
 					Then we improved the duration of each single step. 
-					This results in 25% less time you spend on typing and formatting your content. <br /><a href="benchmarks/analysis.php#usability">Checkout the usability performance tests!</a></p>
+					This results in 25 % less time you spend on typing and formatting your content.</p>
 				</div>
 				<div class="grid_6">
 					<img src="images/stats-faster.png" class="stats" alt="80% speedup" title="80% speedup" />
@@ -173,7 +173,7 @@
 					Even if you need 20 or 100 input areas, Aloha Editor is loaded only once.
 					Most of the other Editors use iframes and need to reload the Javascript and CSS for each instance.
 					Aloha Editor does not need iframes.
-					This results in saving up to 80% of the loading time compared to other editors.<br /><a href="benchmarks/analysis.php#performance">Check out the loading performance test.</a></p>
+					This results in saving up to 80% of the loading time compared to other editors.</p>
 				</div>
 				<div class="clear"></div>
 			</div>

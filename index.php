@@ -26,7 +26,7 @@
 			<div class="grid_13">
 				<div id="YesYouCan">
 				<h1>Aloha Editor - HTML5 WYSIWYG Editor</h1>
-				<p>The world's most advanced browser HTML5 based WYSIWYG editor <a href="/demos.php">lets you experience</a> a whole new way of editing. It's <a title="WYSIWYG Editor benchmark" href="/benchmarks/analysis.php">faster</a> than existing technologies and offers <a title="WYSIWYG Editor demos" href="/demos/css3/">unprecedented WYSIWYG functionalities</a>.
+				<p>The world's most advanced browser HTML5 based WYSIWYG editor <a href="/demos.php">lets you experience</a> a whole new way of editing. It's faster than existing technologies and offers <a title="WYSIWYG Editor demos" href="/demos/css3/">unprecedented WYSIWYG functionalities</a>.
 				</p>
 
 				</div>
@@ -244,7 +244,7 @@
 				<p>In our second example you'll learn how to <a href="/howto-store-data-with-aloha-editor-ajax.php">store data into your backend system</a> using Aloha Editor.</p>
 				
 				<h4>Questions?</h4>
-				<p>If there are question feel free to use our <a href="https://getsatisfaction.com/aloha_editor" title="Get help or help others in the Aloha Editor forum">forum</a>, create an <a href="https://github.com/alohaeditor/Aloha-Editor/issues" title="The Aloha Editor  issue tracker">issue</a> or <a title="Aloha Editor contact form" href="/contact.php">send a message</a>.</p>
+				<p>If there are any questions feel free to use our <a href="https://github.com/alohaeditor/Aloha-Editor/issues" title="The Aloha Editor issue tracker / forum">issue tracker / forum</a> or <a title="Aloha Editor contact form" href="/contact.php">send a message</a>.</p>
 
 			</div>
 

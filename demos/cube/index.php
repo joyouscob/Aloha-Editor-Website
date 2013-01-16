@@ -6,14 +6,11 @@
 	$browser = get_browser(null, true);
 	if ( ($browser['browser'] == 'Safari' && $browser['majorver'] >= 5 ) ||
 	     ($browser['browser'] == 'Chrome' && $browser['majorver'] >= 11 ) ||
-	     ($browser['browser'] == 'Chromium' && $browser['majorver'] >= 11 )
-              ) {
+	     ($browser['browser'] == 'Chromium' && $browser['majorver'] >= 11) ||
+           $nocheck) {
 		// pass
 	} else {
-/*	$regex = '/(Version\\/5\\.[^ ]+ Safari|Chrome\\/11)/';
-	$result = preg_match($regex, $ua);
-	if ( !$result && !$nocheck ) {
-*/		header('Location: nogo.php');
+		header('Location: nogo.php');
 		die;
 	}
 ?>
