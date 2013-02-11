@@ -69,7 +69,7 @@
 
 
 <div style="position:relative;top:-20px;margin:auto;">
-                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-<?=$alohaeditor_version?>.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version <?=$alohaeditor_version?></span></a>
+                                <a title="Download Aloha HTML5 WYSIWYG Editor" href="aloha-editor.org/builds/stable/alohaeditor-<?=$alohaeditor_version?>.zip" class="button"><span class="text">Download Aloha Editor</span><span class="version">Version <?=$alohaeditor_version?></span></a>
 
 				 				<a title="Aloha HTML5 WYSIWYG Editor license" id="license" href="/license.php">GPLv2 License</a>
 								<div title="Aloha HTML5 WYSIWYG Editor languages" id="language">Available in en, fr, de <a href="/join_us.php#translator">more</a></div>
