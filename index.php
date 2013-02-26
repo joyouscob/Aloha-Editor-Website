@@ -10,6 +10,8 @@
 		
 		<link type="text/css" rel="stylesheet" href="/styles/sh/shCore.css"/>
 		<link type="text/css" rel="Stylesheet" href="/styles/sh/shThemeDefault.css" />
+		
+		<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="wrapper" class="container_20">
@@ -63,7 +65,7 @@
 			<div class="grid_6 base">
 
 <div style="text-align: center; position:relative; top: -40px; right: -10px">
-				<img src="http://aloha-editor.org/logo/Aloha%20Editor%20HTML5%20contenteditable%20transparent%20256.png" width="210px"/>
+				<img src="http://aloha-editor.org/logo/Aloha%20Editor%20HTML5%20contenteditable%20transparent%20256.png" width="256px"/>
 				<br />
 </div>
 
@@ -81,22 +83,20 @@
 				<br />               
 </div>
 
-
-<div class="clickteaser" style="height:360px;text-align: center;padding:15px;margin-bottom:10px;position: relative;top: -30px; z-index: 10001;" onclick="window.location.href='http://events.jquery.org/2013/eu/';">
-	
-	<a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank" style="border: 0px;"><img style="border: 0px; margin-bottom: 10px" title="jQuery EU 2013" src="http://aloha-editor.org/blog/wp-content/uploads/2012/10/jQuery_banner_297x372-1-239x300.png" alt="jQuery EU 2013" height="280px"></a>
-	
-		<a title="jQuery EU conference 2013 Vienna" href="http://events.jquery.org/2013/eu/" target="_blank" style="border: 0px;"><img style="border: 0px" title="jQuery EU 2013" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/200px-JQuery_logo.svg.png" alt="jQuery EU 2013" width="200px"></a>
-		
-	<!--
-	<img alt="Aloha HTML5 WYSIWYG Editor logo" src="/logo/Aloha%20Editor%20HTML5%20sticker%20transparent%20256.png" style="width:256px"><br />
-	-->
+<div style="position:relative;top:80px;margin:auto;">
+	<style type="text/css">
+		#mc_embed_signup {background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:265px;}
+		#mc_embed_signup input.button {color:#0C53A4;  width:265px; }
+		#mc_embed_signup input.email {font:14px Helvetica,Arial,sans-serif; color:#0C53A4; width:265px;}
+	</style>
+	<div id="mc_embed_signup">
+	<form action="http://aloha-editor.us6.list-manage.com/subscribe/post?u=fe4682a9d3&amp;id=a79ad8c2b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<label for="mce-EMAIL">Subscribe to our mailing list</label>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your email address" required>
+		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+	</form>
+	</div>
 </div>
-
-	<!-- div style="position:relative;top:-30px;margin:auto;">
-<a title="News about Aloha Editor" href="/blog/"><strong>Read the Aloha Editor blog</strong></a><br />
-<a title="Twitter search about Aloha Editor" href="https://twitter.com/#!/search/aloha%20editor" target="_blank">What says twitter.com?</a>
-</div-->
 
 		</div>
 		
@@ -248,14 +248,12 @@
 
 			</div>
 
-
 			<script type="text/javascript">
 				SyntaxHighlighter.defaults['html-script'] = true;
 				SyntaxHighlighter.defaults['toolbar'] = false;
 				SyntaxHighlighter.defaults['highlight'] = [6,7,8,10,11,12,13,14,15,16,17,19,20,22,23,24,25,26,27,28];
 				SyntaxHighlighter.all();
 			</script>
-
 
 		</div>
 
