@@ -175,6 +175,12 @@
                                 Javascript Guru<br />
                                 <img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
                                 </p>
+                                <p style="clear:both">
+                                <img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("arosborough@acgnw.com")));?>.jpg" style="float:left; padding:5px" />
+                                <a href="https://github.com/arosboro">Andrew Rosborough</a><br />
+                                Javascript Guru<br />
+                                <img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
+                                </p>
 
 				<h3>Thanks to</h3>
 				<p><a href="http://drewwilson.com">Drew Wilson</a><br/>
