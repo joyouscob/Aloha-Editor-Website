@@ -95,40 +95,52 @@ $mail2->AddAddress($_POST['email'], $_POST['name']);
 $mail2->AddReplyTo($emailAddress);
 $mail2->SetFrom($emailAddress);
 $mail2->Subject = "ALOHA: ".mb_strtolower($_POST['subject'])." instant-reply";
-$msg2 = "Aloha " . $_POST['name'] . ",
+$msg2 = "Aloha " . $_POST['name'] . "
 
-because most of the requests are about investments in a commercial license of Aloha Editor, we send you this second, instant, automatic reply with the most important information about commercial licenses. If you have further questions, please do not hesitate to contact us.
+We are excited that you are thinking to support the development and the community of Aloha Editor by buying a commercial license.  To give you information regarding the commercial license of Aloha Editor as fast as possible we are sending you this automated reply. If you have feedback or further questions, please do not hesitate to contact me.
 
-If you have questions about how to interprete the licenses of Aloha Editor, please read this <a target=\"_blank\" href=\"http://www.aloha-editor.org/license-faq.php\">http://www.aloha-editor.org/license-faq.php</a>
-
-Thanks for thinking about using Aloha Editor, we have three different license models. I'm sending you the information regarding these models.
-
-<b>A. Aloha Editor developer license:</b>
-yearly license fee per developer: EUR 195,-
-includes access to community support forum and Software updates for one year for one developer working with Aloha Editor Code
-no need for publishing source code as stated in the GPLv2 or later license
-
-<b>B. Aloha Editor domain license:</b>
-yearly license fee per domain: EUR 425,- (1 domain, maximum 1 mio uniqe clients per month)
-includes access to community support forum members
-and all updates for one year for all developer working with Aloha Editor Code for this domain.
-no need for publishing source code as stated in the GPLv2 or later license
-
-<b>C. Aloha Editor OEM license:</b>
-For projects where licenses above aren't suitable and where you want to deliver your product bundled with Aloha Editor for installation. These are subject to a individual inquiry and individual license terms according to the project. no need for publishing source code as stated in the GPLv2 or later license
+<b>Do I need a commercial license of Aloha Editor?</b>
+Aloha Editor is licensed under GPLv2 as well as under a commercial license. GPlv2 allows in a lot of cases to be used within commercial projects. Please check first if you can use a GPLv2 license in your commercial project. You can <also find further information in our Aloha Editor GPL License FAQ <a target=\"_blank\" href=\"http://www.aloha-editor.org/license-faq.php\">http://aloha-editor.org/license-faq.php</a>
+If you still unsure consult a lawyer or a expert regarding Open Source licenses you trust.
 
 
-There is optional premium support (one 2 one support) for the Aloha Editor developer (300/year) or the domain license (600/year) domain license as well.
+<b>What are the Aloha Editor commercial license models and prices?</b>
+
+There are two commercial licenses for Aloha Editor available:
+
+<em>1. Aloha Editor 'oia license (for up to 2 developers)</em>
+This license allows you to distribute your project/product bundled with Aloha Editor worldwide without limitation regarding number of sales/installations.
+
+The license is covering up to 2 developers and is valid for one year. By using the commercial license you have no obligation for publishing source code as stated in the GPLv2 or later license.
+
+These are subject to a individual inquiry and individual license terms according to the project. no need for publishing source code as stated in the GPLv2 or later license.
+
+The license price is € 990 per year (exl. VAT)
+
+If you want to buy this license, please contact me for proceeding your order
+
+
+<em>2. Aloha Editor 'nui license (more than 2 developers)</em>
+This license allows you to distribute your project/product bundled with Aloha Editor worldwide without limitation regarding number of sales/installations.
+
+The license is covering more than 2 developers and is valid for one year. By using the commercial license you have no obligation for publishing source code as stated in the GPLv2 or later license.
+
+This license is subject to a individual inquiry and individual license terms according to your project. In this case please contact me for receiving an individual offer.
+
+There is optional premium support (one 2 one support) for commercial licenses, if you are interested please contact me.
+
 
 best greetings,
 Manuel Aghamanoukjan
 
+
 --
 Gentics Software GmbH
-Sales Manager
+Aloha Editor License Manager
 m.aghamanoukjan@gentics.com
-<a target=\"_blank\" href=\"http://www.gentics.com\">http://www.gentics.com</a>
-<a target=\"_blank\" href=\"http://www.twitter.com/aghamanoukjan\">http://www.twitter.com/aghamanoukjan</a>
+<a target=\"_blank\" href=\"http://www.aloha-editor.com\">http://www.gentics.com</a>
+<a target=\"_blank\" href=\"http://about.me/aghamanoukjan\">http://about.me/aghamanoukjan</a>
+
 ";
 
 $mail2->MsgHTML(nl2br($msg2));
