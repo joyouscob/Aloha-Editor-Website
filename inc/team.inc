@@ -303,6 +303,28 @@ Community Angel<br />
                 <img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
                 </p>
 
+<p style="clear:both">
+<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("websafe@cjboco.com")));?>.jpg" style="float:left; padding:5px" />
+<a href="https://github.com/cjboco">Doug Jones</a><br />
+Javascript Guru<br />
+<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
+</p>
+
+<p style="clear:both">
+<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("patrik.henningsson@gmail.com")));?>.jpg" style="float:left; padding:5px" />
+<a href="https://github.com/pahen">Patrik Henningsson</a><br />
+Javascript Guru<br />
+<img alt="" src="<?=$path?>flags/se.gif" style="padding-right:5px" />Sweden
+</p>
+
+<p style="clear:both">
+<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("lroggendorff@myemma.com")));?>.jpg" style="float:left; padding:5px" />
+<a href="https://github.com/lroggendorff">Lance Roggendorff</a><br />
+Javascript Guru<br />
+<img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
+</p>
+
+
 <h3>Thanks to</h3>
 <p><a href="http://drewwilson.com">Drew Wilson</a><br/>
 jQuery autosuggest (collaboration)</p>
