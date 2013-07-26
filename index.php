@@ -180,7 +180,7 @@
 				<em>CDN-Version</em>: Use the hosted <abbr title="Content Delivery Network">CDN</abbr>-Version of Aloha Editor for free -- see the highlighted sections in our code example below.
 				
 				<br />
-				<em>Download:</em> If you want to host your own version of Aloha Editor you can <a title="Download Aloha HTML5 WYSIWYG Editor" href="https://github.com/downloads/alohaeditor/Aloha-Editor/alohaeditor-<?=$alohaeditor_version?>.zip">download the latest version</a>.
+				<em>Download:</em> If you want to host your own version of Aloha Editor you can <a title="Download Aloha HTML5 WYSIWYG Editor" href="http://aloha-editor.org/builds/stable/alohaeditor-<?=$alohaeditor_version?>.zip">download the latest version</a>.
 				<h4>Load Aloha Editor</h4>
 				<p>Include the required dependencies (require.js, jquery.js) and Aloha Editor (aloha.js, aloha.css), adjust the configuration to your needs and make elements editable.</p>
 			</div>
