@@ -80,7 +80,10 @@
 
 				<a title="5 minute setup guide using the free CDN hosted Aloha Editor version" href="#howto" class="button-link"><span class="text">CDN &middot; 5 Minute Setup Guide</span><span class="version">cdn.aloha-editor.org</span></a>
 				
-				<br />               
+				<br />     
+				<a title="Buy an Aloha Editor commercial license" href="http://aloha-editor.com" class="button-link"><span class="text">Commercial license &middot; Buy now!</span><span class="version">www.aloha-editor.com</span></a>
+				
+				<br />     
 </div>
 
 <div style="position:relative;top:80px;margin:auto;">
