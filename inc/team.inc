@@ -66,8 +66,8 @@
 </p>
 
 <p style="clear:both">
-<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("aurelien.manca@gmail.com")));?>.jpg" style="float:left; padding:5px" />
-<a href="http://plop-cms.com">Aurelien Manca</a><br />
+<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("aurelien@amanca.fr")));?>.jpg" style="float:left; padding:5px" />
+<a href="http://www.amanca.fr">Aurelien Manca</a><br />
 <img src="<?=$path?>images/octocat.png" /> noreiller<br />
 <img alt="" src="<?=$path?>flags/fr.gif" style="padding-right:5px" />France
 </p>
