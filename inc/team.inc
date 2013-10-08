@@ -324,6 +324,13 @@ Javascript Guru<br />
 <img alt="" src="<?=$path?>flags/us.gif" style="padding-right:5px" />USA
 </p>
 
+<p style="clear:both">
+<img alt="" src="http://www.gravatar.com/avatar/<?php echo md5(strtolower(trim("eric@ericschrijver.nl")));?>.jpg" style="float:left; padding:5px" />
+<a href="https://github.com/codingisacopingstrategy">Eric Schrijver</a><br />
+Javascript Guru<br />
+<img alt="" src="<?=$path?>flags/be.gif" style="padding-right:5px" />Belgium
+</p>
+
 
 <h3>Thanks to</h3>
 <p><a href="http://drewwilson.com">Drew Wilson</a><br/>
