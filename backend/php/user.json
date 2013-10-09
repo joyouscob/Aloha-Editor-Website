@@ -22,5 +22,11 @@
 	    "@id": "c.prerovsky@gentics.com",
 	    "name": "Clemens Prerovsky",
 	    "role": "admin"
+	},
+	{
+	    "@context": "http://aloha-editor.org/person",
+	    "@id": "p.salema@gentics.com",
+	    "name": "Petro Salema",
+	    "role": "admin"
 	}
 ]
